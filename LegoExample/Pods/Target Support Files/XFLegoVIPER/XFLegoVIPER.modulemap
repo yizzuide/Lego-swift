@@ -1,0 +1,6 @@
+framework module XFLegoVIPER {
+  umbrella header "XFLegoVIPER-umbrella.h"
+
+  export *
+  module * { export * }
+}
