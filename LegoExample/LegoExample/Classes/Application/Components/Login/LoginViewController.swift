@@ -49,6 +49,7 @@ class LoginViewController: XFComponentViewController {
     }
     
     @IBAction func registerAction() {
+        self.intentData = ["username" : "yii"]
         // 跳转到OC实现的模块组件
         self.uiBus.openURL(forPush: "xf://login/register?navTitle=注册", customCode: nil)
     }

@@ -21,8 +21,10 @@ XF_EXPORT_COMPONENT
 {
     [super viewDidLoad];
     
-    NSString *msg = [NSString stringWithFormat:@"DetailPresenter -- 当前组件名: %@", XF_ModuleName];
+    NSString *msg = [NSString stringWithFormat:@"XFRegisterViewController -- 当前组件名: %@", XF_ModuleName];
     NSLog(@"%@", msg);
+    
+    NSLog(@"XFRegisterViewController -- 意图数据：%@", self.componentData);
     
     // 发送事件给swift的登录模块
     XF_SendEventForComponents_(@"Event_Register_load", nil, @"Login")

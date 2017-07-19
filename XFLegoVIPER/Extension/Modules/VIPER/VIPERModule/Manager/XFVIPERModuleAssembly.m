@@ -43,14 +43,13 @@
 
 - (void)autoAssemblyModule
 {
-    [self autoAssemblyModuleWithNav:nil ibSymbol:nil shareDataManagerName:nil];
+    [self autoAssemblyModuleWithIbSymbol:nil shareDataManagerName:nil];
 }
 
-- (__kindof XFRouting *)autoAssemblyModuleFromShareModuleName:(NSString *)moduleName
+- (__kindof XFRouting *)autoAssemblyModuleWithIbSymbol:(NSString *)ibSymbol shareDataManagerName:(NSString *)shareDataManagerName
 {
-    self.shareModule = moduleName; // 标识为模块共享
-    NSAssert(![moduleName isEqualToString:@""], @"找不到共享的模块名，没有使用虚拟组件名方式，请使用`XF_AutoAssemblyModule_Fast`方式来组装！");
-    return [self _autoAssemblyModuleWithModuleName:moduleName navName:nil ibSymbol:nil shareDataManagerName:nil];
+    NSString *moduleName = [XFVIPERModuleReflect moduleNameForRouting:self.fromRouting];
+    return [self _autoAssemblyModuleWithModuleName:moduleName ibSymbol:ibSymbol shareDataManagerName:shareDataManagerName];
 }
 
 - (void)autoAssemblyShareModule
@@ -58,16 +57,18 @@
     [self autoAssemblyModuleFromShareModuleName:[XFVIPERModuleReflect moduleNameForSuperRoutingClass:self.fromRouting.class]];
 }
 
-- (__kindof XFRouting *)autoAssemblyModuleWithNav:(NSString *)navName ibSymbol:(NSString *)ibSymbol shareDataManagerName:(NSString *)shareDataManagerName
+- (__kindof XFRouting *)autoAssemblyModuleFromShareModuleName:(NSString *)moduleName
 {
-    NSString *moduleName = [XFVIPERModuleReflect moduleNameForRouting:self.fromRouting];
-    return [self _autoAssemblyModuleWithModuleName:moduleName navName:navName ibSymbol:ibSymbol shareDataManagerName:shareDataManagerName];
+    self.shareModule = moduleName; // 标识为模块共享
+    NSAssert(![moduleName isEqualToString:@""], @"找不到共享的模块名，没有使用虚拟组件名方式，请使用`XF_AutoAssemblyModule_Fast`方式来组装！");
+    return [self _autoAssemblyModuleWithModuleName:moduleName ibSymbol:nil shareDataManagerName:nil];
 }
 
-- (__kindof XFRouting *)_autoAssemblyModuleWithModuleName:(NSString *)moduleName navName:(NSString *)navName ibSymbol:(NSString *)ibSymbol shareDataManagerName:(NSString *)shareDataManagerName
+
+
+- (__kindof XFRouting *)_autoAssemblyModuleWithModuleName:(NSString *)moduleName ibSymbol:(NSString *)ibSymbol shareDataManagerName:(NSString *)shareDataManagerName
 {
     NSString *modulePrefix = [XFModuleReflect inspectModulePrefixWithModule:moduleName stuffixName:@"Routing"];
-    NSString *navClassName = navName ? [NSString stringWithFormat:@"%@%@",navName,@"NavigationController"] : @"";
     NSString *activityClassName = [NSString stringWithFormat:@"%@%@%@",modulePrefix,moduleName,@"Activity"];
     NSString *presenterClassName = [NSString stringWithFormat:@"%@%@%@",modulePrefix,moduleName,@"Presenter"];
     NSString *interactorClassName = [NSString stringWithFormat:@"%@%@%@",modulePrefix,moduleName,@"Interactor"];
@@ -88,13 +89,13 @@
         return [self buildModulesAssemblyWithIB:ibSymbol presenterClass:NSClassFromString(presenterClassName) interactorClass:NSClassFromString(interactorClassName) dataManagerClass:NSClassFromString(dataManagerClassName)];
     }else{
         // 通用组装方式
-        return [self buildModulesAssemblyWithActivityClass:NSClassFromString(activityClassName) navigatorClass:NSClassFromString(navClassName) presenterClass:NSClassFromString(presenterClassName) interactorClass:NSClassFromString(interactorClassName) dataManagerClass:NSClassFromString(dataManagerClassName)];
+        return [self buildModulesAssemblyWithActivityClass:NSClassFromString(activityClassName)  presenterClass:NSClassFromString(presenterClassName) interactorClass:NSClassFromString(interactorClassName) dataManagerClass:NSClassFromString(dataManagerClassName)];
     }
 }
 
-- (__kindof XFRouting *)buildModulesAssemblyWithActivityClass:(Class)activityClass navigatorClass:(Class)navigatorClass presenterClass:(Class)perstentClass interactorClass:(Class)interactorClass dataManagerClass:(Class)dataManagerClass
+- (__kindof XFRouting *)buildModulesAssemblyWithActivityClass:(Class)activityClass presenterClass:(Class)perstentClass interactorClass:(Class)interactorClass dataManagerClass:(Class)dataManagerClass
 {
-    return [self _bulildModulesAssemblyWithInterface:NSStringFromClass(activityClass) navigatorClass:navigatorClass presenterClass:perstentClass interactorClass:interactorClass dataManagerClass:dataManagerClass];
+    return [self _bulildModulesAssemblyWithInterface:NSStringFromClass(activityClass) presenterClass:perstentClass interactorClass:interactorClass dataManagerClass:dataManagerClass];
 }
 
 - (__kindof XFRouting *)buildModulesAssemblyWithIB:(NSString *)ibSymbol
@@ -102,10 +103,10 @@
                            interactorClass:(Class)interactorClass
                           dataManagerClass:(Class)dataManagerClass
 {
-    return [self _bulildModulesAssemblyWithInterface:ibSymbol navigatorClass:nil presenterClass:perstentClass interactorClass:interactorClass dataManagerClass:dataManagerClass];
+    return [self _bulildModulesAssemblyWithInterface:ibSymbol presenterClass:perstentClass interactorClass:interactorClass dataManagerClass:dataManagerClass];
 }
 
-- (__kindof XFRouting *)_bulildModulesAssemblyWithInterface:(NSString *)interface navigatorClass:(Class)navigatorClass  presenterClass:(Class)perstentClass interactorClass:(Class)interactorClass dataManagerClass:(Class)dataManagerClass
+- (__kindof XFRouting *)_bulildModulesAssemblyWithInterface:(NSString *)interface presenterClass:(Class)perstentClass interactorClass:(Class)interactorClass dataManagerClass:(Class)dataManagerClass
 {
     if (!interface) {
         NSAssert(NO, @"当前模块名对应的类不存在，是否把模块作为共享的壳用于虚拟组件，如果是请使用`XF_AutoAssemblyModuleForShareShell_Fast`方式组装！");
@@ -171,10 +172,7 @@
     }
     
     [self.fromRouting.uiBus setUInterface:activity];
-    if (navigatorClass) {
-        UINavigationController *navVC = [[navigatorClass alloc] initWithRootViewController:activity];
-        [self.fromRouting.uiBus setNavigator:navVC];
-    }else if(self.shareModule.length) { // 如果是共享模块
+    if(self.shareModule.length) { // 如果是共享模块
         // 搜索到共享模块
         XFRouting *sharedRouting = [XFRoutingLinkManager findRoutingForModuleName:self.shareModule];
         // 共享模块视图层是否有导航控制器,把它复制过来
