@@ -16,10 +16,9 @@ class IndexViewModel: LEViewModel, IndexDataDriverProtocol{
 //MARK:- Life Cycle
     override func viewDidLoad() {
         print("IndexViewModel -- viewDidLoad")
-        print("IndexViewModel -- 当前组件名: \(LEMVVMModuleReflect.moduleName(for: self))")
+        print("IndexViewModel -- 当前组件名: \(XFComponentReflect.componentName(forComponent: self))")
         
         print("IndexViewModel -- 接收到了意图数据：\(self.componentData!)")
-        
     }
     
     override func componentWillBecomeFocus() {
@@ -43,7 +42,7 @@ class IndexViewModel: LEViewModel, IndexDataDriverProtocol{
     
     
     func requirelookDetailAction() {
-        // 在代码层只有Detail组件，pageDetail的page可以任意取名，这是框架提供的虚拟组件，为了
+        // 在代码层只有Detail组件，pageDetail的page可以任意取名，这是框架提供的虚拟组件，为了实现多例组件
         self.uiBus.openURL(forPush: "xf://index/pageDetail", customCode: nil)
     }
     

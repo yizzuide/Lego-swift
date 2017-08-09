@@ -16,10 +16,20 @@ private func Routing(_ presenter: XFPresenter) ->DetailWireFramePort? { return p
 class DetailPresenter: XFPresenter, DetailEventHandlerPort {
 
     override func viewDidLoad() {
-        print("DetailPresenter -- 当前组件名: \(XFVIPERModuleReflect.moduleName(forModuleLayerObject: self)))")
+        print("DetailPresenter -- 当前组件名: \(XFComponentReflect.componentName(forComponent: self)))")
+        
     }
     
     override func initRenderView() {
         Interactor(self)?.fetchData()
     }
+    
+    override func onNewIntent(_ intentData: Any) {
+        
+    }
+    
+    override func receiveComponentEventName(_ eventName: String, intentData: Any?) {
+        
+    }
+    
 }

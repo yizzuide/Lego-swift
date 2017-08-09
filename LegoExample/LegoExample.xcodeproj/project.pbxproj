@@ -33,6 +33,7 @@
 		40997EE81F188AB200D784FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40997ED71F188AB200D784FD /* LoginViewController.swift */; };
 		40997EE91F188AB200D784FD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40997ED81F188AB200D784FD /* LoginViewController.xib */; };
 		40997EEA1F188AB200D784FD /* XFRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40997EDC1F188AB200D784FD /* XFRegisterViewController.m */; };
+		409A25C81F39ACC800299B43 /* LosePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409A25C51F39ACC800299B43 /* LosePwdViewController.m */; };
 		4FDFF8C1385D5AEF3511776A /* Pods_LegoExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACE2D589CE9267CBDAA9E99 /* Pods_LegoExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		40997ED81F188AB200D784FD /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		40997EDB1F188AB200D784FD /* XFRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFRegisterViewController.h; sourceTree = "<group>"; };
 		40997EDC1F188AB200D784FD /* XFRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFRegisterViewController.m; sourceTree = "<group>"; };
+		409A25C41F39ACC800299B43 /* LosePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LosePwdViewController.h; sourceTree = "<group>"; };
+		409A25C51F39ACC800299B43 /* LosePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LosePwdViewController.m; sourceTree = "<group>"; };
 		BACE2D589CE9267CBDAA9E99 /* Pods_LegoExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegoExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44E21775E9F6B2F18DE3C3F /* Pods-LegoExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegoExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LegoExample/Pods-LegoExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -336,6 +339,7 @@
 				4085A4C31F18E1A000DBF0C6 /* Index */,
 				40997ED61F188AB200D784FD /* Login */,
 				40997ED91F188AB200D784FD /* Register */,
+				409A25C21F39ACC800299B43 /* LosePwd */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -376,6 +380,39 @@
 			sourceTree = "<group>";
 		};
 		40997EDE1F188AB200D784FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		409A25C21F39ACC800299B43 /* LosePwd */ = {
+			isa = PBXGroup;
+			children = (
+				409A25C31F39ACC800299B43 /* Controller */,
+				409A25C61F39ACC800299B43 /* Model */,
+				409A25C71F39ACC800299B43 /* View */,
+			);
+			path = LosePwd;
+			sourceTree = "<group>";
+		};
+		409A25C31F39ACC800299B43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				409A25C41F39ACC800299B43 /* LosePwdViewController.h */,
+				409A25C51F39ACC800299B43 /* LosePwdViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		409A25C61F39ACC800299B43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		409A25C71F39ACC800299B43 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -549,6 +586,7 @@
 			files = (
 				4085A51C1F18E80E00DBF0C6 /* DetailUserInterfacePort.swift in Sources */,
 				4085A4CF1F18E1A000DBF0C6 /* IndexViewController.swift in Sources */,
+				409A25C81F39ACC800299B43 /* LosePwdViewController.m in Sources */,
 				40997EE81F188AB200D784FD /* LoginViewController.swift in Sources */,
 				4085A4CD1F18E1A000DBF0C6 /* IndexDataDriverProtocol.swift in Sources */,
 				4085A5181F18E80E00DBF0C6 /* DetailInteractor.swift in Sources */,

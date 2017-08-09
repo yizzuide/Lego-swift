@@ -35,13 +35,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 添加URL路由
         XFURLRoute.initURLGroup(["xf://login",
                                  "xf://login/register",
-                                 // 下面两个注册的是虚拟组件的URL，框架对支持的虚拟组件无关于架构模式(MVC、MVVM、VIPER)
+                                 // 下面注册的是虚拟组件的URL，框架对支持的虚拟组件无关于架构模式(MVC、MVVM、VIPER)
+                                 "xf://login/findLosePwd",
                                  "xf://mainIndex",
                                  "xf://index/pageDetail"
                                  ])
         
         // 开启第一个组件
-        XFUIBus().openURL("xf://login?nav=UI&navTitle=登录&id=123", on: self.window, customCode: nil)
+        XFUIBus().openURL("xf://login?nav=UI&navTitle=登录&id=123", on: self.window!, customCode: nil)
+        
+        
+        // 在任意地方发送组件事件
+//        XFComponentManager.sendEventName("Event_Global_Load", intentData: nil, forComponents: ["Login"])
         
         return true
     }
