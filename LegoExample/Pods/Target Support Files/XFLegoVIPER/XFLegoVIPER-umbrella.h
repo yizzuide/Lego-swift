@@ -31,6 +31,8 @@
 #import "XFControllerReflect.h"
 #import "XFControllerHandler.h"
 #import "XFControllerRunnable.h"
+#import "LEMVVMConnector.h"
+#import "LEMVVMNavigationController.h"
 #import "LEMVVMModuleHandler.h"
 #import "LEMVVMModuleFactory.h"
 #import "LEDataDriverProtocol.h"

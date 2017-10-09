@@ -33,6 +33,39 @@ static NSMutableArray *componentKeyArr_;
     }
 }
 
++ (void)addApplicationNotification
+{
+    NSArray *names = @[
+                       UIApplicationDidEnterBackgroundNotification,
+                       UIApplicationWillEnterForegroundNotification,
+                       UIApplicationDidFinishLaunchingNotification,
+                       UIApplicationDidBecomeActiveNotification,
+                       UIApplicationWillResignActiveNotification,
+                       UIApplicationDidReceiveMemoryWarningNotification,
+                       UIApplicationWillTerminateNotification,
+                       UIApplicationSignificantTimeChangeNotification,
+                       UIApplicationWillChangeStatusBarOrientationNotification,
+                       UIApplicationDidChangeStatusBarOrientationNotification,
+                       UIApplicationWillChangeStatusBarFrameNotification,
+                       UIApplicationDidChangeStatusBarFrameNotification,
+                       UIApplicationBackgroundRefreshStatusDidChangeNotification,
+                       UIApplicationProtectedDataWillBecomeUnavailable,
+                       UIApplicationProtectedDataDidBecomeAvailable,
+                       ];
+    for (NSNotificationName name in names) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendApplicationEventForAllComponents:) name:name object:nil];
+    }
+}
+
++ (void)sendApplicationEventForAllComponents:(NSNotification *)noti
+{
+    for(id<XFComponentRoutable> component in componentTable_.objectEnumerator) {
+        if ([component respondsToSelector:@selector(receiveComponentEventName:intentData:)]) {
+            [component receiveComponentEventName:noti.name intentData:noti.userInfo];
+        }
+    }
+}
+
 + (void)addComponent:(id<XFComponentRoutable>)component enableLog:(BOOL)enableLog
 {
     NSString *componentName = [XFComponentReflect componentNameForComponent:component];
@@ -49,6 +82,19 @@ static NSMutableArray *componentKeyArr_;
     [componentKeyArr_ removeObject:componentName];
     [self _clearZombieComponent];
     [self _log];
+}
+
++ (void)addIncompatibleComponent:(UIViewController *)viewController componentName:(NSString *)componentName
+{
+    [componentTable_ setObject:viewController forKey:componentName];
+    [componentKeyArr_ addObject:componentName];
+}
+
++ (void)removeIncompatibleComponentWithName:(NSString *)componentName
+{
+    [componentTable_ removeObjectForKey:componentName];
+    [componentKeyArr_ removeObject:componentName];
+    [self _clearZombieComponent];
 }
 
 + (void)_clearZombieComponent
@@ -90,6 +136,11 @@ static NSMutableArray *componentKeyArr_;
     for (NSString *compName in componentNames) {
         [self sendEventName:eventName intentData:intentData forComponent:compName];
     }
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - log

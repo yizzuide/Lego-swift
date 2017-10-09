@@ -1,15 +1,15 @@
 {
   "name": "XFLegoVIPER",
-  "version": "3.5.0",
+  "version": "4.0.0",
   "license": "MIT",
-  "summary": "A VIPER project engine.",
+  "summary": "A seamless framework for build app from MVC, MVVM, VIPER (etc.) design pattern in iOS world. (OC & Swift)",
   "homepage": "https://github.com/yizzuide/XFLegoVIPER",
   "authors": {
     "yizzuide": "fu837014586@163.com"
   },
   "source": {
     "git": "https://github.com/yizzuide/XFLegoVIPER.git",
-    "tag": "3.5.0"
+    "tag": "4.0.0"
   },
   "requires_arc": true,
   "platforms": {

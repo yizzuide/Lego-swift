@@ -1,5 +1,5 @@
 PODS:
-  - XFLegoVIPER (3.5.0)
+  - XFLegoVIPER (4.0.0)
 
 DEPENDENCIES:
   - XFLegoVIPER (from `../XFLegoVIPER.podspec`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../XFLegoVIPER.podspec"
 
 SPEC CHECKSUMS:
-  XFLegoVIPER: e03c08946edef49bc83c0d0cb1a51fb6edd583c3
+  XFLegoVIPER: 219df0fbe4d9c0c8c8f0d7d0bc17d92e2a2019f7
 
 PODFILE CHECKSUM: 4f23e0c5650f1ce472c81763962d270058f1ae0d
 
