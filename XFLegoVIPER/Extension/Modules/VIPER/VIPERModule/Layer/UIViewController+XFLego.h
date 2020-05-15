@@ -2,8 +2,8 @@
 //  UIViewController+XFLego.h
 //  XFLegoVIPER
 //
-//  Created by yizzuide on 16/2/24.
-//  Copyright © 2016年 yizzuide. All rights reserved.
+//  Created by Yizzuide on 16/2/24.
+//  Copyright © 2016年 Yizzuide. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,7 +11,6 @@
 #import "XFEventHandlerPort.h"
 #import "XFLegoMarco.h"
 #import "XFUInterfaceFactory.h"
-#import "XFExpressPack.h"
 #import "UIViewController+ComponentUI.h"
 
 // 转换事件层真实接口

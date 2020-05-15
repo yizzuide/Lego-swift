@@ -2,13 +2,14 @@
 //  XFComponentRoutable.h
 //  XFLegoVIPER
 //
-//  Created by 付星 on 2016/11/25.
-//  Copyright © 2016年 yizzuide. All rights reserved.
+//  Created by Yizzuide on 2016/11/25.
+//  Copyright © 2016年 Yizzuide. All rights reserved.
 //
 
 #import "XFComponentReflect.h"
 #import "XFComponentUI.h"
 #import "XFUIBus.h"
+#import "XFEventReceivable.h"
 
 // 注册键盘弹出通知
 #define XF_RegisterKeyboardNotifaction \
@@ -40,7 +41,7 @@ XF_EventIs_(UIKeyboardWillChangeFrameNotification, { \
  *  一个组件可运行接口
  */
 NS_ASSUME_NONNULL_BEGIN
-@protocol XFComponentRoutable <NSObject>
+@protocol XFComponentRoutable <XFEventReceivable>
 
 @optional
 
@@ -87,12 +88,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)componentWillResignFocus;
 
 /**
- *  接收到组件的消息事件
- *
- *  @param eventName  消息名
- *  @param intentData 消息数据
+ * 定时器循环运行方法
  */
-- (void)receiveComponentEventName:(NSString *)eventName intentData:(nullable id)intentData;
+- (void)run;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -3,955 +3,1056 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A4B80DF531EE11E93E86E50810CB04 /* LEViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7C5B62A2A97656E5A30C1381C142F0 /* LEViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		057682A12904645874D8B9C260BBD2F7 /* XFUInterfaceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D62F7754BB309E73BE769C4479809F /* XFUInterfaceFactory.m */; };
-		06389C5ECDFEB821E76B8176B9494571 /* XFActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = C47F522177168635C09142F3AC2D7904 /* XFActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		097B1D69A30865F3EBB3F8CD33B983C2 /* XFVIPERModuleReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = 8752CBEB47B78B77F10F4A689439D4A9 /* XFVIPERModuleReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A5C974BA09A848772DB8B1047192FED /* XFRoutingFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = BC68660D94B294C65461825DE22263DF /* XFRoutingFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B2944705D279AAAFB188BC064CAD868 /* XFUserInterfacePort.h in Headers */ = {isa = PBXBuildFile; fileRef = F64BFC5D9ED183E027673A4632FAAD4E /* XFUserInterfacePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BADF8264C2494E463082391CE70B763 /* LEMVVMNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F5F0AC50B710CE99CAF4C00C251414 /* LEMVVMNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BFD11AF7DA04676717C9B07BA71E3B2 /* LEViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FFF1AF03F8FC0EC765262C435F581AF0 /* LEViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11AF59AF9F32BA7E686344E97FF03CB3 /* XFInteractor.h in Headers */ = {isa = PBXBuildFile; fileRef = B7A6029D0B5808AA18EE7A2BD114291D /* XFInteractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		129FE8F0DD10BE979DB8B705854045B7 /* XFComponentUIEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D0AFF307630517E784AF2216907B46C /* XFComponentUIEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		162E6C5EF52BACF449190ACB1735B62A /* XFRenderData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D47FA76C77EA804CEEDC46DF622E0A2 /* XFRenderData.m */; };
-		1722E15F553F90CC9D4B1CF3CA75A76A /* XFDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4CEBD73D269BEEFA3BDFC5ED534F0 /* XFDataManager.m */; };
-		18799F6F4650C6E0546B6DD4F267C180 /* XFModuleReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB8E445F923F117AAECD955A6EF4FB6 /* XFModuleReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1993AA00AB400B55414A818078CF656A /* XFUIBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E32C7F54B7A15D4469408F77759232A /* XFUIBus.m */; };
-		1AD03D89D84E6A0CFCBF79D080ED45D4 /* XFURLParse.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F1146EB38B06B1CAD932BA09931B57 /* XFURLParse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EDA72078875E879360E4232A2B932F6 /* XFVIPERModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3995EF9C29D238E8337B9BD02F8E76 /* XFVIPERModuleAssembly.m */; };
-		1F85EAA15932E89C477818C661A61FD6 /* XFVIPERModuleAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E9AAD79A92B939F093383ABA013F40 /* XFVIPERModuleAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B6859A60506542A915EE0393BC4CBB /* XFComponentHandlerMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B74E07F7002C3F0E70D33135A85E9A /* XFComponentHandlerMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		249FAC25EDE5FDBB9CC10ADCBEAC0B5E /* LEMVVMModuleFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5615C0F60FC4ACC165020E80D51C5 /* LEMVVMModuleFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24E3F26DE5E679400F850016DAB063EC /* XFControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2B6B1EA9BBDEEEE0F90A6F85E3A0F /* XFControllerFactory.m */; };
-		267A392011278D425C1101C87EABB108 /* XFActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 585578E1BB4AA79145BB20365104D9F7 /* XFActivity.m */; };
-		26F97F2F2949C1B3B326ABE1A9E777C7 /* UIViewController+ComponentUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E51005885386EBA1E2777711BB9F989 /* UIViewController+ComponentUI.m */; };
-		2C779344D2ECD45371AADDB82BF4AC06 /* XFVIPERModuleRunnable.h in Headers */ = {isa = PBXBuildFile; fileRef = 857F710F40BF6C3FD87272E6AA7ACAB5 /* XFVIPERModuleRunnable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E47928556AC10055EAA411B7F9AF365 /* LEViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D9785A75C26F90D4A0CCDC83E3A999 /* LEViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30249F5E1B59C38E204A17FE0A752AFB /* XFRenderData.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BF5C6C55AFBCB5C1465981CAFA320D /* XFRenderData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		304ACEC43B7CC63DC2DEDA2A401B89EE /* NSObject+XFLegoCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5977843AA1A0AB52AE137F2B98DEF2E0 /* NSObject+XFLegoCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33AD0B4E5E733124FF1D77D0ABA7B9FC /* UIViewController+ComponentUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 854F669B10C9CE43479229C2F14A1611 /* UIViewController+ComponentUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35F808AD12F3BB783126AE26D001E8EE /* NSObject+XFLegoSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = B6F86348653502D7EC6F83C30BD0A95A /* NSObject+XFLegoSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		364CB695990EC5AE035DB2ABFA63C5EE /* UIView+XFLego.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B133CE81B8E347E369C1BBD4B5DB88 /* UIView+XFLego.m */; };
-		3715B253D7DAD8906A6AB2D4F5437AEC /* UIViewController+LEView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B486E876CBE0F63A76FBDA9E92A8FE /* UIViewController+LEView.m */; };
-		38565B6D8ED663C0FFAFE1487C7E8EC7 /* XFRenderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2436822DA71097F34429D649682BE08 /* XFRenderItem.m */; };
-		3B5A7E3EA3E7722FADC1592F86ACDF82 /* UIViewController+ComponentBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = E2140C3455B518AAE6A22E8F2C0CB616 /* UIViewController+ComponentBridge.m */; };
-		3C6B623F027F91780AF3F2D110AE36DB /* XFRoutingLinkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B0865BEF0A168D514F91A7371D7B8C43 /* XFRoutingLinkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C73CAF0DC6CC7424F923D0E23393A55 /* UIViewController+ComponentBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FAA1483569304DFB83BBACACD008C7 /* UIViewController+ComponentBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D5A083E8E751FC05021DE22C2A4546E /* LEMVVMModuleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = F297D83577CD021B08C38D2776D10EB7 /* LEMVVMModuleHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D9EC6E77B102AF2DC2451D31F85BB5E /* UIViewController+XFLego.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCB76F872E28946738E0A893930524F /* UIViewController+XFLego.m */; };
-		419951FDFAFC2FCE23FB826052EB1F4D /* XFLegoVIPER.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EAAF29C3EAF1D132BB92FB88D322925 /* XFLegoVIPER.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4310B6D78036F1B45B25AB0825EA46D5 /* XFExpressPiece.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FB54DC351FF77C036FEA91B9590D937 /* XFExpressPiece.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54932452EE2D4FC3087A6C1EBFF51AD0 /* XFEventHandlerPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F9AA5EF17594990FE93C8628633FA0 /* XFEventHandlerPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		558BEBF08C457942AEB2A8DDA344E95D /* Pods-LegoExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 757193151B64C59A59F2BBC4A02BFA6E /* Pods-LegoExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		575291728EE551FDCFA728A4D9FEEF13 /* LEMVVMModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A2BFF7587657A3AC0F29CC38A09B2F /* LEMVVMModuleFactory.m */; };
-		5C8BD4AA54FC2E76930368FB400DA82F /* XFEventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E256922A40E5AA36E197A143C29B923 /* XFEventBus.m */; };
-		61E2E734DF2866C46BEA92A3E35E4B05 /* XFLegoMarco.h in Headers */ = {isa = PBXBuildFile; fileRef = 689B3BF97A4208836624D259ADE1EEFA /* XFLegoMarco.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		626A419776AD7E70D920BACB77C45BD8 /* XFControllerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1DBA177658134F3E94CF3DFAA11F4C /* XFControllerHandler.m */; };
-		6771C7D5F594D716342697D0FF47DA76 /* XFControllerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E0C58F37889DA25696BAAFC32DEE74E /* XFControllerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FA42205E6C3FE73E3BEB3E7DCD568C7 /* XFComponentReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = 05652AC3BAF6B2177AACC413524E324C /* XFComponentReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FED33BA71C575FEB4D47D2104C3D073 /* XFComponentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F18113F89C07BA07F5B0D537C42447BB /* XFComponentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FF3B4806BD6255E0A5E1D9E0E1FBE39 /* XFURLRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 138BD3E16684477A5B1576B3AED1B52D /* XFURLRoute.m */; };
-		73B83EEA25F107CD95A2A7FEEC2B6F8F /* XFEventBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A44508E7822EE31B231B1C40085B43 /* XFEventBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		748BB446C93C65A31A3AA719D94FDBF6 /* XFURLRoutePlug.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A3CEB888CD8AC7F9EE7451B9C60E59 /* XFURLRoutePlug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77EE7A033DE9667CCF379DCC8325F35C /* XFModuleReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F538D281B7533CCD714353ADB43B28 /* XFModuleReflect.m */; };
-		7B923C7927D42F7A7E956A6778DCA8AA /* LEMVVMConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8C581DE57215CD0081C010F7C61655 /* LEMVVMConnector.m */; };
-		7DFFDA7252E969CC5515F7020C335714 /* XFControllerHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 519FD6ABFC9BC5203D59F017E219A10C /* XFControllerHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FB9DFC54972668689F7666113442790 /* XFRouting.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3EF6CBD50251908FBE3E4385944A62 /* XFRouting.m */; };
-		84C12E4C56B2537964C10AF724D67377 /* NSObject+XFLegoInvokeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC348F23C3FFC0DF2014706B5095D7 /* NSObject+XFLegoInvokeMethod.m */; };
-		865238367D000F68290DB25BFFA9B560 /* XFExpressPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 344F70286119D44E9849A25BAF20630E /* XFExpressPiece.m */; };
-		8977C0A0AB9EE4B1B72634A8FF61D8CC /* LEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 530AEB9A5CF3EACF2A4EE9C758CC839F /* LEViewController.m */; };
-		8D66AC872B5736C104390C72020E5061 /* XFUIBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B7D148B8232354E91FD66DDE8289BB2 /* XFUIBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90D53F0ACDE17B9119731E9DCBFB4FA4 /* XFWireFramePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 34869760F529D2C47E019A8D6B4853EF /* XFWireFramePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92953EFF194C252EB0E1B90B83C06B81 /* XFURLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = A27B43965A8F6D4AFA8BAF697B63AE91 /* XFURLParse.m */; };
-		93AD4EDE26FF53FEF24F9D1DB1593685 /* XFLegoVIPER-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F956221DFE3EB455C0CC407C68CE36 /* XFLegoVIPER-dummy.m */; };
-		943DAE396661E4070C6AC7D5382BCC8C /* XFUIOperatorPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D251499C989F67884C2669F4FD2D44 /* XFUIOperatorPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99FD9AF9955D7B76908D3CF6AE4CA202 /* LEDataDriverProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 332F38D73CAA3D48CADF9DE61C865E15 /* LEDataDriverProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A2A9D73F3D8B41A2045A714099B939A /* XFComponentHandlerPlug.h in Headers */ = {isa = PBXBuildFile; fileRef = 010670E0897C3809F66D5F9ADAFA1DF3 /* XFComponentHandlerPlug.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BCE326FD55E22D063D12656795E0902 /* XFComponentHandlerMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBDF7F5B5CDAB66583A664103D6AA9D /* XFComponentHandlerMatcher.m */; };
-		9E360B7FFB41FD0EC96BB258F2681EDE /* XFExpressPiecePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 51084385C8FEBF6FCB2B67A88D630A9B /* XFExpressPiecePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9EC0DCF437BACDA167C8794B24CEC9C9 /* XFVIPERModuleReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC2AE2D0DDEB045F8AA1EBD579EA25 /* XFVIPERModuleReflect.m */; };
-		A0BD81A1A2F75AAD17BC694C25D103CC /* XFLegoVIPER-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 591E05B840D8354738C9A30154BE8E0A /* XFLegoVIPER-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A205B30F6A00E986CF0176918F644774 /* XFRoutingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 581CDEAEA94CD22C7C6475737A31DB0F /* XFRoutingFactory.m */; };
-		A388856794DD438564F97BB8C9EA98B5 /* XFComponentUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 90CF3E92B111E66FA5DDE085796CB14E /* XFComponentUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A522A7BA0487CD3C376DA7E2EDA375D3 /* XFExpressPack.m in Sources */ = {isa = PBXBuildFile; fileRef = F519DE10630DF365C476A62A38A88309 /* XFExpressPack.m */; };
-		A842C4CAD401AB4BD59EC33C860B849A /* Pods-LegoExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63917EB47A334B5540F8CF38751BFB16 /* Pods-LegoExample-dummy.m */; };
-		AE247CBAF3CFA23C2EED6E5D01C3C519 /* XFLegoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C83B64B4478E0127B34A7FE5EC6F5DD /* XFLegoConfig.m */; };
-		B09A937F00DC79B3F58D1C98BD9723EE /* XFRenderItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B626DFA86968618EC3D298B2BD139B63 /* XFRenderItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B476FA4FF2FACDA40C38420BA9E58334 /* XFComponentBindEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA43EEF701FC26BD0454E56710C855A /* XFComponentBindEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B47F6EFCF9495ADCEA1ED7E83E51724E /* NSObject+XFLegoCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA921AE9CF52B6F89B18B335A2F8F72 /* NSObject+XFLegoCopy.m */; };
-		B4B694DB9A022515670929561981E488 /* XFComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B593BFD46AD6A17F9303B8519E363A /* XFComponentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B77C71D1BA81A662CB5FE7E60A42F19B /* LEMVVMModuleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E43AAFFFE0274AF88F6DC099387BF2 /* LEMVVMModuleHandler.m */; };
-		BF20376844612143A23E4055AB0F7F6B /* XFComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5649C7D18DAA74965B48458DA56F43 /* XFComponentViewController.m */; };
-		C2CB352C365513B28210C1F692BE3C28 /* XFUInterfaceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 7779141FA999CEF1484E043DDECA1239 /* XFUInterfaceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C310059B97E528BDEA18CA0185EC973F /* XFExpressPack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1504E7EC1C90B8D33A29C98E652408 /* XFExpressPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3D7012CC64FDCDFD800C3805D5DA9AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C6DE000895E04C708EFDCB0759AB4DD8 /* UIViewController+LEView.h in Headers */ = {isa = PBXBuildFile; fileRef = 177E7F71E9AD8C5A13612EA5B08A6E01 /* UIViewController+LEView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA165C16B785B42064E4DE2D9AE3270A /* XFInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B27F5EA8BC09D80E550976683BFFC0AB /* XFInteractor.m */; };
-		CA4DB3617F3B41B880AE49ABE649D5D2 /* XFVIPERModuleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF80B74BFADE361D1F608B91734EC55 /* XFVIPERModuleHandler.m */; };
-		CABDD6F27C2D019F65BE3BE964194343 /* XFVIPERModuleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B97ADE84FC11B23B5500D6ABB80DFF1 /* XFVIPERModuleHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF409754F0BCA4B5A946E2BE644ECB0C /* UIView+XFLego.h in Headers */ = {isa = PBXBuildFile; fileRef = A93CEEF52449BF48713355EC086FF1CA /* UIView+XFLego.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1BE6EF63C7FF6A6EB193499E5A273D4 /* XFDataManagerPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C17885A51BFE6565BE967A209368279 /* XFDataManagerPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5FF90AB3E416EEDBD154896937765CA /* NSObject+XFLegoSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = BD15D22B541C774DF5603E5E3D53C7B6 /* NSObject+XFLegoSwizzle.m */; };
-		D6F3F2EB81AB5DC6F713A8EE4C0DCC83 /* XFRoutingLinkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE43A1B4C0E679C56CB0C7D3C04E6144 /* XFRoutingLinkManager.m */; };
-		D7E55D9F99F9AD541CAD07C2111A8F56 /* XFControllerReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DED031F4781D9B3D30B1260C077D2 /* XFControllerReflect.m */; };
-		D81299E638658CEFD4F2F7847F2F4471 /* XFLegoConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE8A3ED06DB7050CCE228F5208B487D /* XFLegoConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCF235916988C1019572DF72F2E170B0 /* XFPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C37502170DBEEE52872264C91FBBB1 /* XFPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEEEE771308FDE2CAAF4D02072559A0F /* XFInteractorPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 0564564BA47CEC03BD3E4A4BFA26C9F7 /* XFInteractorPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2700184CB31BD625C90F6E82EEE8022 /* LEMVVMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B710FA9C9D730644E9798FE49154E6 /* LEMVVMNavigationController.m */; };
-		E3C72EEB6F6E3E3E8ADB82A62E246699 /* XFComponentReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39E042B9F8C88F31383B7813394E7B /* XFComponentReflect.m */; };
-		E3F041660EE186437CD1502370FBD5C8 /* UIViewController+XFLego.h in Headers */ = {isa = PBXBuildFile; fileRef = E941FB7A49EFD393AED0297DB2EAF8FE /* UIViewController+XFLego.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4C651BE6399EA1CD960A92CDB7C7AD6 /* NSObject+XFLegoInvokeMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8A3C35BE352BC41D260E86A958183B /* NSObject+XFLegoInvokeMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4D68E3FB8B46DC36D3DA085D765A8A5 /* XFURLRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C17CAD5A717901EB0FDC14BC3B927F /* XFURLRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E550B0A0779389EE3E916C99CDEB19C2 /* LEMVVMModuleReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 62593F274118E36742DA73015FD0CAB0 /* LEMVVMModuleReflect.m */; };
-		E68EF406E761F13497C89FFD7292FDBD /* UIView+ComponentSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = E75807312C1A7C3F634906BB61C28F27 /* UIView+ComponentSubView.m */; };
-		ED4421D495AE3C3A2AB9407D379EC2A2 /* XFControllerReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = 15DA6B28D3FF18B3C3406A8B51222327 /* XFControllerReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED969C0E0781C867E83141D16E437948 /* XFControllerRunnable.h in Headers */ = {isa = PBXBuildFile; fileRef = F3034CC235EBDFD3F991C26B0239EC53 /* XFControllerRunnable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3E61C28C714F394597983B564B2EC9D /* XFDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E8981277CCEA1991C0B61C962B114F /* XFDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F850D1FD44294321443ADABE68BBD846 /* XFComponentRoutable.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D095A86F2A5584E67726728257F9E4 /* XFComponentRoutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F97B9A0416D528FEE667FBE6E1787BB9 /* LEMVVMConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = D58FDE2F52800A60AE95AC29B9419833 /* LEMVVMConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9B4B9AB1F1438FF2D68AA4EECA63C55 /* XFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A462A23298864A969E6EDAA793C4A6A /* XFComponentManager.m */; };
-		FA0AB5E01F722223C357D86C51526A07 /* XFRouting.h in Headers */ = {isa = PBXBuildFile; fileRef = 7713CA5C0793804004723431A37EF1B2 /* XFRouting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA66D1410D07B0B74C7B1931C83B4B3A /* XFPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F95035776FC03AD9A7CC344848DF8207 /* XFPresenter.m */; };
-		FB68DA89CD71DD250073F0913B8A6BB0 /* LEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8510837AAD720C2F85B54C84B57F70 /* LEViewModel.m */; };
-		FB8D8667D5DA315A1EF8838654586383 /* LEMVVMModuleReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E3B0A2666C061B487DE61FFBF81628F /* LEMVVMModuleReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCEEB86306C57CFE283C0799B6267560 /* UIView+ComponentSubView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2EE6F093933289386D0CA9DE00BF24 /* UIView+ComponentSubView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE6DB8C549F9977178EF131887AA404D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		0525056D1F8C99AFF2C1A86796DBF1E5 /* XFModuleReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C5C39BDC0861F686526EE2ABF132AD /* XFModuleReflect.m */; };
+		059A834E3364782D1FA85A36E78403B2 /* UIView+XFLego.h in Headers */ = {isa = PBXBuildFile; fileRef = 47E19AFC38023DD463EE5EEFCE710E21 /* UIView+XFLego.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08955B7462CD287396EE6A36307C8F4A /* XFLegoMarco.h in Headers */ = {isa = PBXBuildFile; fileRef = 0276CD59436D68BEC8934C4B293AE74B /* XFLegoMarco.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08B94AD1AE1C503B4B2A07E98D74F256 /* XFExpressPack.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AC3DF87E6AF6BDB7C9601793F8CC55 /* XFExpressPack.m */; };
+		0C29653F5BB2B0F3279802A384E43C5D /* XFURLInterceptorChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DD7F810D460EE22860FDDE9AF2563E /* XFURLInterceptorChain.m */; };
+		0CA1C6DF1111D02F278987C7198B5097 /* NSObject+XFPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD62F1C662E86E6222D4FB9D708ED52 /* NSObject+XFPipe.m */; };
+		0CA53EFD898FEE01565960F5FADF1CB3 /* UIViewController+XFLego.m in Sources */ = {isa = PBXBuildFile; fileRef = 752488C6FA18F141399153FC47B0FCED /* UIViewController+XFLego.m */; };
+		0DF125D9E47200115AF91BB8C63DDEB5 /* XFRenderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5337398F4959945E51BA651501D61 /* XFRenderItem.m */; };
+		1056F079D3685A65884F3F90791E8177 /* XFDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E0944853F9AB878987F0A580DC450DD /* XFDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		111B35A25632553FA238291D99DE8CAA /* XFLegoVIPER.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D80062A1FA2045697E7DAD33B5CB594 /* XFLegoVIPER.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		115594A9BA3A27AA37DA7633DBBC61F0 /* XFVIPERModuleReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = DACA1837E37AE4299848B43C81ABD0E0 /* XFVIPERModuleReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B3454505ECA20921B1F2D0F6EDAF41 /* XFInteractorPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B566D4D5B0938AEECA65221734FE5CF /* XFInteractorPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		147A66A319BBC697C3000E39E82D1A29 /* XFLegoConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B2CB0069EBF3089CDE12DF80DA69A7 /* XFLegoConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		173F17847158411DDA695D90C6C1A9E4 /* XFExpressDirver.h in Headers */ = {isa = PBXBuildFile; fileRef = 3187F81FE449B58D0FD6C80CA28B8BB5 /* XFExpressDirver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		175C1752DEDCF361E27D01FF14995396 /* XFUIOperatorPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7915D30EBBA3F09D5F5BE6A38FE987 /* XFUIOperatorPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BBD180A8933EC3A808AAE6F51351770 /* XFComponentHandlerMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7C91E736116892E3005FEA75708A10 /* XFComponentHandlerMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CDB772F3AFA9A16BEB60075394DA49D /* XFComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AC60A1AB319E688C3444EA53E130F /* XFComponentManager.m */; };
+		1D20E5FB35FECE48F0A61F106D0A1B01 /* Pods-LegoExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D801FA28A572E490540A63048D84B0 /* Pods-LegoExample-dummy.m */; };
+		254E7BB85114612D4616BBC22522AF4F /* XFURLInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE97FF8A73E5B2713B0F3CA61D7A26B /* XFURLInterceptor.m */; };
+		267918C262B4A30AE68824ECC67B76A4 /* LEMVVMIntent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB15723E03154BB6754A16943E84D64 /* LEMVVMIntent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		283C1340F70ED19D5585301C39FC5B02 /* XFPipePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B012C8F094052314227CE23E0F8203C /* XFPipePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BA7FB2F475AF5A23FB589D3D891BB3B /* XFComponentEventResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5009114A46071F5747A3D8B78D0E0118 /* XFComponentEventResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ED9470A79707E3805B0E922543718C3 /* XFControllerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B044E61A2A5F7D618F4FF3AABFF9F /* XFControllerHandler.m */; };
+		2F445479C81C950DE1AD4EF71B93A672 /* LEViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF3D33ED28BC8A1746635550D7B8640 /* LEViewModel.m */; };
+		32046FC983B9BAD6EAFBE74763E357FF /* XFRouting.m in Sources */ = {isa = PBXBuildFile; fileRef = 0686A49EC4E8458C819AC275017D11F8 /* XFRouting.m */; };
+		3323734F3A7B3605A221CCCBCB68462F /* XFRenderItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A5B02E94B51856621AAAF0AEB6F7B86 /* XFRenderItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33FA6BCA30361FBECD08BA241FCC173A /* XFRoutingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 142FA0281F6049EEB6EAF4585BF607F7 /* XFRoutingFactory.m */; };
+		3993091FAB3DD155E17A89BDDFDAC765 /* NSObject+XFPipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 440395AC28756329D89827CE9EF5DFEE /* NSObject+XFPipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A6AE48B3823F07DE735F1F68084FC60 /* XFURLInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDE2D5ED2689F1CF226D3DFBB57C74B /* XFURLInterceptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B6BAB1ABA338F4191F346B6261A0E65 /* UIViewController+LEView.m in Sources */ = {isa = PBXBuildFile; fileRef = E990AE2772670383E31B8DE89290A3C3 /* UIViewController+LEView.m */; };
+		3E0D6D36213F918829B012EC2EF65ADD /* LEMVVMConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BA24B52360BF45713CCB287BC0E96C /* LEMVVMConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E52C30F9B320D9BB0C95ABDE6224378 /* XFURLInterceptorChain.h in Headers */ = {isa = PBXBuildFile; fileRef = D289823401016B967EA1A0550E939810 /* XFURLInterceptorChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FAB44A333678EC550A1F2F3A54ECCDC /* LEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692C78FE5E9E5EDAA2D2673E807F44A7 /* LEViewController.m */; };
+		44536E29BB03B88DF91F0B12656FC407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4B596731E88FE0C7B23B90D3CCEAE8E5 /* XFURLRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE062FAF18E569BC1D395EA60F3E92D /* XFURLRoute.m */; };
+		54E552FCCBE755CDB4362F94096FEDA0 /* LEMVVMModuleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CD2687254FC23463ED35B05594E513 /* LEMVVMModuleHandler.m */; };
+		561823592C853660D277561C9E41B1B0 /* NSObject+XFLegoCopy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B348596F1574DF2E38DBBB5651F1686 /* NSObject+XFLegoCopy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5623270D5A358913C35ADC325505DBE1 /* XFRoutingLinkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 335F31FFB3AD70B8D4B20FE789C985A0 /* XFRoutingLinkManager.m */; };
+		573A707ADB43B428512532E5F369F19F /* XFControllerHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E9D6328F864C4B5A9C602ABB2C122A /* XFControllerHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57409D441F4601D6CF53FD376F22647D /* XFUIBus.m in Sources */ = {isa = PBXBuildFile; fileRef = A9ABC6838D75D7B8C48D51E60B8C0682 /* XFUIBus.m */; };
+		57FF4B67F823014ADE073CE3D8F924F1 /* XFEventBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ADD3D26594005728CA35032E4D0AD6 /* XFEventBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A1199AC26417D38E72AE1CA14D21349 /* XFControllerReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5104455E6265C11523D74F537C4B4E62 /* XFControllerReflect.m */; };
+		5B9418099C30B287860DBB0EC56E00CF /* XFVIPERModuleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 109BAE93745DE8C87D571288F19D15CD /* XFVIPERModuleHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C2C6F61913360F0AEAF2E45EAE2966B /* XFLegoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 126B0ADE1F8312FF3BB6E7D0A8A3226B /* XFLegoConfig.m */; };
+		5D1EF1292E835E072487E2171654767A /* XFUserInterfacePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BFB09FBEB0E34D908C7BF22D9453AE3 /* XFUserInterfacePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F115DB7CEFDF4988F50250D162B260A /* XFURLParse.h in Headers */ = {isa = PBXBuildFile; fileRef = A212A3ABF877AD8565B3AB551D2B8E8B /* XFURLParse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		616771D3CA50D2E77B39E1B940F80195 /* LEMVVMNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A340B7DE6651B03588247A4A2B6B43 /* LEMVVMNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		629B24E057F58D920FC8FD23710A843E /* NSObject+XFLegoInvokeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = D392E7D820CB73C6D05E48E6DDC39747 /* NSObject+XFLegoInvokeMethod.m */; };
+		6483D8212F339DEF1448E0A75F558915 /* XFPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9603AD6125EFC776C0CFE0DB6B7E2B51 /* XFPresenter.m */; };
+		66A26FFD6B884CBE9B5601CA373E8DD0 /* XFPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29D17532DD6C1D601E0D09E9D06BB964 /* XFPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69730860C7EDD7EEF45EDB9817EAA5A3 /* UIView+XFLego.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ABC2D421561E26EE80A59F5A0F6BE4 /* UIView+XFLego.m */; };
+		6ABA52E454DD24466F06C1FE4DF44EB3 /* XFUInterfaceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D688DC7EEA4A50BD41C65D4F1042DDC /* XFUInterfaceFactory.m */; };
+		6B680B584981896519F8138CAA24479A /* XFRoutingLinkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 865E664CB5D639137301EFB7433D9A4A /* XFRoutingLinkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CF2B3456D8F01BCBE7D90C7841C04CA /* XFUIBus.h in Headers */ = {isa = PBXBuildFile; fileRef = B50A80CC70E8220F3FF343FC2C6EC21F /* XFUIBus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DC5580FEE015D5EBE6D5E35BE043622 /* XFUInterfaceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 428070898FCA36CE02F058EFBD738E08 /* XFUInterfaceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71CC6BD95CAFE5E1F05E1189AB3D90D3 /* XFRouting.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BAA9D7D46C2FCF94B3E28D1F367C842 /* XFRouting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7516B725EE2B52ADC0FFDC1A7616947D /* LEMVVMConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8119E9E92AA2A7D58EED3ED1280B6 /* LEMVVMConnector.m */; };
+		7736CEDEDDF5C324E2C7AC8EE8BB64DD /* XFExpressDirver.m in Sources */ = {isa = PBXBuildFile; fileRef = 675E2DDE3744C9C2D855CEDEFE8911DF /* XFExpressDirver.m */; };
+		77EC23E4C8F8165C1A85FC142525264C /* XFExpressPiece.h in Headers */ = {isa = PBXBuildFile; fileRef = CF470172B6A8043690A3F6ADD624F15F /* XFExpressPiece.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78DD932C34A11A8605CD1797B6737AF4 /* XFLegoVIPER-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC31262603380AECCBBE3BD2450535D /* XFLegoVIPER-dummy.m */; };
+		7CAB5571B284B16A690565933A1729F0 /* XFControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E20266D1734504EB27CD6BDE4BCB5D23 /* XFControllerFactory.m */; };
+		7CF8C75F2C892A357970B85E25E76A21 /* XFComponentUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A156F2D8A002FC6838EEF473DAED20 /* XFComponentUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		809507D0BDA3DA74B3D8F3D2ED89280E /* XFWireFramePort.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3E4CE0A8C8DF8B52599222D4E05309 /* XFWireFramePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8217EBAD8291503AD496429F2F56069F /* UIViewController+ComponentBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DB9BEA9682FA6C286E94B538A3B3E7 /* UIViewController+ComponentBridge.m */; };
+		83469784C0B0E1EBE532352380CFEBA9 /* XFPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 349EFE69CD659B736E1C22B6FE1AE9EE /* XFPipe.m */; };
+		83F6A6BAFB1AF92A35252D475F8B7258 /* XFComponentBindEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BFBF07021E97C7C554D5DC6050FDE6E /* XFComponentBindEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		856DF00CD46F7AB3968F6C099B86DD97 /* XFInteractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A12DB35D876F99BF7536C7FE560A71D /* XFInteractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88F1E0FC141692D78EE7BD154679DAB2 /* XFActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 72D33113C1CDCAC580E308272BCD3AB6 /* XFActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		895082AA906981455F8D9AD5D7FFFB30 /* LEViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F66D3CACC2E294814539F234FF053F /* LEViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AB317CA51A186FB94DE4A2DA8FA82A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8BE4A60FE33A2E812C9E58CB05736B73 /* NSObject+XFLegoCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04152C91A30E312A61C96B5E91A69B5A /* NSObject+XFLegoCopy.m */; };
+		8DC33A3F124ECDACFBD9E460BEF559F6 /* LEViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 493458E563D87E6D701CDEAC0A358469 /* LEViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F22894D58A0DFE17D924215A11737AA /* UIView+ComponentSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E249497EC480D7482C4FDA4176E98 /* UIView+ComponentSubView.m */; };
+		966BC40FE44033283E43843FC66B83B3 /* XFExpressPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B562893EEAAD7F391EC8F144D553FD /* XFExpressPiece.m */; };
+		97DB905D24474CD7E15E4A414B85F4B6 /* XFActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EBFB00BE2DDF320462B2BC85C2EB46 /* XFActivity.m */; };
+		98676AF5B18DF9B2B767A4C42E6331E7 /* LEMVVMModuleHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 17684A28773970E3543EF41C81468D19 /* LEMVVMModuleHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998D926B99F2B56DD11EBEF17C8F8B16 /* XFDataManagerPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 342D764A9780BCEEF635F8A0D2D6DBCD /* XFDataManagerPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0404E4EEB2423776A2E03FF0BE303B7 /* XFControllerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B01E483585815AE5B1AB36F3CBB89929 /* XFControllerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A299559A1724B192F17C7305AE84687D /* XFComponentRoutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DBCE5EDF4CE169775547D39CA0C900 /* XFComponentRoutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C6D90566150246F347DDCF4C1C5EB1 /* XFEventHandlerPort.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7EA3F8FD9A868499B8C73FF436CC45 /* XFEventHandlerPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68060690938C53571A7392DCD1A1B01 /* XFRenderData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E815EEE7B20A826DFB90A1220D16BF /* XFRenderData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6FF7E720224BCFA23B52118DC42A506 /* XFURLRoutePlug.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A04A45EB1D371280FE57F40E119B2BB /* XFURLRoutePlug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A82F6CEC2D528231A17A7F8EF6F17F0D /* XFApplicationEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F899E52FF92A93A8ADB9E86D9F203B4 /* XFApplicationEmitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC596B1A7E94F90022967DFAB0808DC /* XFDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8756D12CAD5B86B95C7B02CCFC22D /* XFDataManager.m */; };
+		AB5114B6AE569ABCCC78E9CFEC6B7B1D /* NSObject+XFLegoSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD96FBFB28396F1609378E2FA60E06EF /* NSObject+XFLegoSwizzle.m */; };
+		ADD7545882BBD8E88DE2F9D40E80235D /* XFApplicationEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6DDEC0F0FADF4BB6F4DCDBD3DF48A9 /* XFApplicationEmitter.m */; };
+		ADEA0EE37A3E84A35CDCBC8306DDAD63 /* LEViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C5B687AF0BC7374DD85F961F4D4DA2 /* LEViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE0E3A4D312A610F911AE221B5423E92 /* XFComponentHandlerMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EBC218F0514C63481BE1F08D9EAC23 /* XFComponentHandlerMatcher.m */; };
+		B10C899D3AC47D5F5288293D90C87BBD /* XFExpressPack.h in Headers */ = {isa = PBXBuildFile; fileRef = D503038ADD94381401BFA4B1164BDC5E /* XFExpressPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B24A363FA39F2833695EB5198ED5D978 /* XFComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8015322191842FF0AA53A258FA358231 /* XFComponentViewController.m */; };
+		B260AEB90E0F6D1C8F78239EFB19FFFD /* NSObject+XFLegoInvokeMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5B7B546EBDD4AB733A95371B380DBA /* NSObject+XFLegoInvokeMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B39722FD5E5AD77787C8F7092E9FCF50 /* XFVIPERModuleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD4E1A35A75ABE46009829EAFD9A42 /* XFVIPERModuleHandler.m */; };
+		B6097FAB33634FE8E9DEE7674D234163 /* Pods-LegoExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B26A39D552DA611909CDD43AAEA392D /* Pods-LegoExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B654B9A58EC9101C0DBDA362F62F83E8 /* XFVIPERModuleReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1512FB516E9E3552BAAB730A07C0376C /* XFVIPERModuleReflect.m */; };
+		B71B6B60EBB96A85E0132DD62B77A6FD /* LEMVVMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C898C337E60C4D960B1AD150D5563B05 /* LEMVVMNavigationController.m */; };
+		B95096B526283D984321B34639FB713F /* UIViewController+LEView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD7CAD0DEA7D46DC9696ECE5C22BBCD /* UIViewController+LEView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B990BED7B16449996249B383099AEDE1 /* UIViewController+ComponentUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FACA3C13DA16B3E6DA261743D193C0 /* UIViewController+ComponentUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE0B547A0D245A97264FED36864F9C42 /* XFModuleReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = 645D035BBC90E802B6EF1A33E063DB1B /* XFModuleReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF15C1A99D16E881D36BBF9781A84F16 /* XFRoutingFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D3187FDC34DAA77B8CF39A88F2E929 /* XFRoutingFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C21FFCED7B7A500BC8B3693A72665488 /* UIViewController+ComponentUI.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4944DFAF8A08F6E52A9069B8A29503 /* UIViewController+ComponentUI.m */; };
+		C22A9C59EF5BCCD4CB6AB50046B563FF /* XFInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 543156C1E6E23B67F1F12D5A72C1D1BC /* XFInteractor.m */; };
+		C2949D6ED1954E852D29A5C5A6B6F79A /* XFURLRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E8AA636F9FF3C228A7497AA90B8B6C /* XFURLRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8579D43D5F36BBEB070DE62C7FD1976 /* XFURLParse.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5E5FEB653D3ADB17679A3447F5736C /* XFURLParse.m */; };
+		C8E99444267364FF148D6B6F12B722A9 /* XFComponentReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = C024FEECD3CE322A89E1B88662C979DA /* XFComponentReflect.m */; };
+		CA93C61FE89BB9BA7A3F64E6887332A0 /* LEMVVMModuleReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = F9088CF51096EFF1C3C96B8A29505308 /* LEMVVMModuleReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD7096C486FC7F6D274F412C39B371B4 /* XFComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 578A4578DFF2FD505A331BDCAB1410BF /* XFComponentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF10A17136FDF45540CC6DD7BA4DB30C /* XFVIPERModuleAssembly.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E33794B156621AF94E29A55E129D3F /* XFVIPERModuleAssembly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D044020D42EC2A0B506A06221EDD8C05 /* XFComponentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A41B52CBD9509E1E56CCE7E0A1D886 /* XFComponentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4DAEB2EF4E5D237E77E947BAE7A374F /* XFControllerRunnable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB938A2DDEA131D6F61EBE14A338C20 /* XFControllerRunnable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5AECBB228901C515B9E46CD4489B420 /* UIViewController+ComponentBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D249D72C1A9C6AAF80272B12C6E1456 /* UIViewController+ComponentBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7C22D3C0B483DC825CC4B6C10D553B2 /* XFComponentHandlerPlug.h in Headers */ = {isa = PBXBuildFile; fileRef = 680960033E526C366D4D514650B34A15 /* XFComponentHandlerPlug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D852D51086CD18A8C8BF9821227B06D3 /* XFComponentReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DC1C86CAAE50AF0C4D07E3F47A4BAD /* XFComponentReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAA9E44C03E4684804679CA6DF2667CA /* XFLegoVIPER-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8A6B841C4E827D56BF869E2DE0A5DD /* XFLegoVIPER-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6E97B978668A111C4D0EB5A019F028 /* XFExpressPiecePort.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D66B29D2340DE9BAB40472957C4765 /* XFExpressPiecePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFBA5E041F8AE0801B0E68859DCBE999 /* LEMVVMModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FB3E13303237F240DC3EB7595F1702 /* LEMVVMModuleFactory.m */; };
+		DFE0EDB0D2531B09E5FDB6DB04B69475 /* XFEmitterPlug.h in Headers */ = {isa = PBXBuildFile; fileRef = 05DF82AE72DDD7E15B349DE361C93784 /* XFEmitterPlug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E46575B1AE97E55A82CC9EB1AA7CB24A /* XFPipe.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C747FC45C3D4F2E800DF702430F457 /* XFPipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E540FDEDE6EA0A94D5AD418B11240821 /* LEDataDriverProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C50BE91A801663C15C4C044DF19BCBD /* LEDataDriverProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA3E7AE6DCEFFC6D848D0EE193B2E23D /* XFVIPERModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A264679DD4AF2065123E7F0DAC013F /* XFVIPERModuleAssembly.m */; };
+		EC62DE64D2CE3E794D50C3BD70AB8EC0 /* LEMVVMModuleFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = FA738AA77C2534B74C3A76809A501745 /* LEMVVMModuleFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F026DA488A460257FF1779F404EFA85C /* XFControllerReflect.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E9C9B82B2AB0003F996C358113351C /* XFControllerReflect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1DB5086F183C09EE3D85350C32C8A44 /* LEMVVMModuleReflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA87DC6165B322510DCBFBCBF3324E /* LEMVVMModuleReflect.m */; };
+		F3A6DC37DD7C2C5461030740DD2DD0A9 /* XFVIPERModuleRunnable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA8700C3AAC347577BAF2E27AD1AAD5 /* XFVIPERModuleRunnable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F615F8C50F7FB4B15EDD572470C70B45 /* XFEventReceivable.h in Headers */ = {isa = PBXBuildFile; fileRef = FE77E15CEB5ED96D78ACA1DE97C1A033 /* XFEventReceivable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7CEA604C2A7DB26DC9B0C3AA7DABF2F /* XFRenderData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D69434D2E36A40E2EA20367DC427FB3 /* XFRenderData.m */; };
+		F84A2C56791184619369E8B1C89C8DA8 /* UIView+ComponentSubView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A9DE5B493C7A53D9A0FB423E89C6E4E /* UIView+ComponentSubView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC125DF8B8B1E96F8DE659654C529F24 /* NSObject+XFLegoSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = AD190E0B38E6A2A1C44C71073AEF8A75 /* NSObject+XFLegoSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD50443CC4A7BCCA97E623EB97EBF3A9 /* UIViewController+XFLego.h in Headers */ = {isa = PBXBuildFile; fileRef = 07565EB4BCE24AD0F7D4C65732328178 /* UIViewController+XFLego.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDBBF877D70496C3097E522703E4DB98 /* XFEventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1985FEB78C2C3D0FB72BBA6416169 /* XFEventBus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4FF75D8BB15DBD814AF437E64006F73A /* PBXContainerItemProxy */ = {
+		58864D8431EB7B4989CF03803C2317B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9D7A8C7AADA2FBE5985F699010B7823E;
+			remoteGlobalIDString = EC2626344F822E299421946F0AD8DD20;
 			remoteInfo = XFLegoVIPER;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E9AAD79A92B939F093383ABA013F40 /* XFVIPERModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFVIPERModuleAssembly.h; sourceTree = "<group>"; };
-		010670E0897C3809F66D5F9ADAFA1DF3 /* XFComponentHandlerPlug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentHandlerPlug.h; sourceTree = "<group>"; };
-		042E8B3AFF7168C8FF5C6C9553FBFBAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0564564BA47CEC03BD3E4A4BFA26C9F7 /* XFInteractorPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFInteractorPort.h; sourceTree = "<group>"; };
-		05652AC3BAF6B2177AACC413524E324C /* XFComponentReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentReflect.h; sourceTree = "<group>"; };
-		05F5F0AC50B710CE99CAF4C00C251414 /* LEMVVMNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMNavigationController.h; sourceTree = "<group>"; };
-		06FAA1483569304DFB83BBACACD008C7 /* UIViewController+ComponentBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ComponentBridge.h"; sourceTree = "<group>"; };
-		08A44508E7822EE31B231B1C40085B43 /* XFEventBus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFEventBus.h; sourceTree = "<group>"; };
-		08B593BFD46AD6A17F9303B8519E363A /* XFComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentManager.h; sourceTree = "<group>"; };
-		0B7DED031F4781D9B3D30B1260C077D2 /* XFControllerReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFControllerReflect.m; sourceTree = "<group>"; };
-		0B97ADE84FC11B23B5500D6ABB80DFF1 /* XFVIPERModuleHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFVIPERModuleHandler.h; sourceTree = "<group>"; };
-		0E0C58F37889DA25696BAAFC32DEE74E /* XFControllerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFControllerFactory.h; sourceTree = "<group>"; };
-		1147F64B1EACA854F84BCAD02E3D1179 /* XFLegoVIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XFLegoVIPER.framework; path = XFLegoVIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		138BD3E16684477A5B1576B3AED1B52D /* XFURLRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFURLRoute.m; sourceTree = "<group>"; };
-		15DA6B28D3FF18B3C3406A8B51222327 /* XFControllerReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFControllerReflect.h; sourceTree = "<group>"; };
-		177E7F71E9AD8C5A13612EA5B08A6E01 /* UIViewController+LEView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LEView.h"; sourceTree = "<group>"; };
-		1B20B15453D16D5B8FCA491E78457CFB /* Pods-LegoExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LegoExample-frameworks.sh"; sourceTree = "<group>"; };
-		1BA921AE9CF52B6F89B18B335A2F8F72 /* NSObject+XFLegoCopy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XFLegoCopy.m"; sourceTree = "<group>"; };
-		1E32C7F54B7A15D4469408F77759232A /* XFUIBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFUIBus.m; sourceTree = "<group>"; };
-		203B6C7F06FC7E22FBEA9639A7EC257F /* Pods_LegoExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LegoExample.framework; path = "Pods-LegoExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21F9AA5EF17594990FE93C8628633FA0 /* XFEventHandlerPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFEventHandlerPort.h; sourceTree = "<group>"; };
-		22B133CE81B8E347E369C1BBD4B5DB88 /* UIView+XFLego.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+XFLego.m"; sourceTree = "<group>"; };
-		22E43AAFFFE0274AF88F6DC099387BF2 /* LEMVVMModuleHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMModuleHandler.m; sourceTree = "<group>"; };
-		29F1146EB38B06B1CAD932BA09931B57 /* XFURLParse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFURLParse.h; sourceTree = "<group>"; };
-		332F38D73CAA3D48CADF9DE61C865E15 /* LEDataDriverProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEDataDriverProtocol.h; sourceTree = "<group>"; };
-		344F70286119D44E9849A25BAF20630E /* XFExpressPiece.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFExpressPiece.m; sourceTree = "<group>"; };
-		34869760F529D2C47E019A8D6B4853EF /* XFWireFramePort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFWireFramePort.h; sourceTree = "<group>"; };
-		3D0AFF307630517E784AF2216907B46C /* XFComponentUIEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentUIEvent.h; sourceTree = "<group>"; };
-		3D7C5B62A2A97656E5A30C1381C142F0 /* LEViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEViewController.h; sourceTree = "<group>"; };
-		48A3CEB888CD8AC7F9EE7451B9C60E59 /* XFURLRoutePlug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFURLRoutePlug.h; sourceTree = "<group>"; };
-		49BC2AE2D0DDEB045F8AA1EBD579EA25 /* XFVIPERModuleReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFVIPERModuleReflect.m; sourceTree = "<group>"; };
-		4A462A23298864A969E6EDAA793C4A6A /* XFComponentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFComponentManager.m; sourceTree = "<group>"; };
-		4AA63F8E2E338B4FB22A855F81512145 /* XFLegoVIPER-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFLegoVIPER-prefix.pch"; sourceTree = "<group>"; };
-		4CAC348F23C3FFC0DF2014706B5095D7 /* NSObject+XFLegoInvokeMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XFLegoInvokeMethod.m"; sourceTree = "<group>"; };
-		4E51005885386EBA1E2777711BB9F989 /* UIViewController+ComponentUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ComponentUI.m"; sourceTree = "<group>"; };
-		4FB54DC351FF77C036FEA91B9590D937 /* XFExpressPiece.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFExpressPiece.h; sourceTree = "<group>"; };
-		50C17CAD5A717901EB0FDC14BC3B927F /* XFURLRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFURLRoute.h; sourceTree = "<group>"; };
-		51084385C8FEBF6FCB2B67A88D630A9B /* XFExpressPiecePort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFExpressPiecePort.h; sourceTree = "<group>"; };
-		519FD6ABFC9BC5203D59F017E219A10C /* XFControllerHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFControllerHandler.h; sourceTree = "<group>"; };
-		530AEB9A5CF3EACF2A4EE9C758CC839F /* LEViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEViewController.m; sourceTree = "<group>"; };
-		571033B3D2D50D290745B2B18D87FF34 /* Pods-LegoExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LegoExample.debug.xcconfig"; sourceTree = "<group>"; };
-		581CDEAEA94CD22C7C6475737A31DB0F /* XFRoutingFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRoutingFactory.m; sourceTree = "<group>"; };
-		585578E1BB4AA79145BB20365104D9F7 /* XFActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFActivity.m; sourceTree = "<group>"; };
-		591E05B840D8354738C9A30154BE8E0A /* XFLegoVIPER-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFLegoVIPER-umbrella.h"; sourceTree = "<group>"; };
-		5977843AA1A0AB52AE137F2B98DEF2E0 /* NSObject+XFLegoCopy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+XFLegoCopy.h"; sourceTree = "<group>"; };
-		5B1504E7EC1C90B8D33A29C98E652408 /* XFExpressPack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFExpressPack.h; sourceTree = "<group>"; };
-		5B3EF6CBD50251908FBE3E4385944A62 /* XFRouting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRouting.m; sourceTree = "<group>"; };
-		62593F274118E36742DA73015FD0CAB0 /* LEMVVMModuleReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMModuleReflect.m; sourceTree = "<group>"; };
-		63917EB47A334B5540F8CF38751BFB16 /* Pods-LegoExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LegoExample-dummy.m"; sourceTree = "<group>"; };
-		64E8981277CCEA1991C0B61C962B114F /* XFDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFDataManager.h; sourceTree = "<group>"; };
-		67D251499C989F67884C2669F4FD2D44 /* XFUIOperatorPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFUIOperatorPort.h; sourceTree = "<group>"; };
-		689B3BF97A4208836624D259ADE1EEFA /* XFLegoMarco.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFLegoMarco.h; sourceTree = "<group>"; };
-		6AA43EEF701FC26BD0454E56710C855A /* XFComponentBindEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentBindEvent.h; sourceTree = "<group>"; };
-		6B7D148B8232354E91FD66DDE8289BB2 /* XFUIBus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFUIBus.h; sourceTree = "<group>"; };
-		6E3995EF9C29D238E8337B9BD02F8E76 /* XFVIPERModuleAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFVIPERModuleAssembly.m; sourceTree = "<group>"; };
-		6FBDF7F5B5CDAB66583A664103D6AA9D /* XFComponentHandlerMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFComponentHandlerMatcher.m; sourceTree = "<group>"; };
-		757193151B64C59A59F2BBC4A02BFA6E /* Pods-LegoExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LegoExample-umbrella.h"; sourceTree = "<group>"; };
-		76B4CEBD73D269BEEFA3BDFC5ED534F0 /* XFDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFDataManager.m; sourceTree = "<group>"; };
-		7713CA5C0793804004723431A37EF1B2 /* XFRouting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRouting.h; sourceTree = "<group>"; };
-		7779141FA999CEF1484E043DDECA1239 /* XFUInterfaceFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFUInterfaceFactory.h; sourceTree = "<group>"; };
-		7BE8A3ED06DB7050CCE228F5208B487D /* XFLegoConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFLegoConfig.h; sourceTree = "<group>"; };
-		7C17885A51BFE6565BE967A209368279 /* XFDataManagerPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFDataManagerPort.h; sourceTree = "<group>"; };
-		7C83B64B4478E0127B34A7FE5EC6F5DD /* XFLegoConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFLegoConfig.m; sourceTree = "<group>"; };
-		7D47FA76C77EA804CEEDC46DF622E0A2 /* XFRenderData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRenderData.m; sourceTree = "<group>"; };
-		7E256922A40E5AA36E197A143C29B923 /* XFEventBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFEventBus.m; sourceTree = "<group>"; };
-		7E8A3C35BE352BC41D260E86A958183B /* NSObject+XFLegoInvokeMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+XFLegoInvokeMethod.h"; sourceTree = "<group>"; };
-		80BF5C6C55AFBCB5C1465981CAFA320D /* XFRenderData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRenderData.h; sourceTree = "<group>"; };
-		82ABF0A7A6EA20E6EA0DE87AF0BBA4AC /* Pods-LegoExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LegoExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		82B74E07F7002C3F0E70D33135A85E9A /* XFComponentHandlerMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentHandlerMatcher.h; sourceTree = "<group>"; };
-		83D9785A75C26F90D4A0CCDC83E3A999 /* LEViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEViewProtocol.h; sourceTree = "<group>"; };
-		854F669B10C9CE43479229C2F14A1611 /* UIViewController+ComponentUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ComponentUI.h"; sourceTree = "<group>"; };
-		857F710F40BF6C3FD87272E6AA7ACAB5 /* XFVIPERModuleRunnable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFVIPERModuleRunnable.h; sourceTree = "<group>"; };
-		8752CBEB47B78B77F10F4A689439D4A9 /* XFVIPERModuleReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFVIPERModuleReflect.h; sourceTree = "<group>"; };
-		88827BA2B4B1DFA122C83679722CB7B9 /* XFLegoVIPER.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = XFLegoVIPER.modulemap; sourceTree = "<group>"; };
-		89D62F7754BB309E73BE769C4479809F /* XFUInterfaceFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFUInterfaceFactory.m; sourceTree = "<group>"; };
-		8EAAF29C3EAF1D132BB92FB88D322925 /* XFLegoVIPER.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFLegoVIPER.h; sourceTree = "<group>"; };
-		90CF3E92B111E66FA5DDE085796CB14E /* XFComponentUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentUI.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93F538D281B7533CCD714353ADB43B28 /* XFModuleReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFModuleReflect.m; sourceTree = "<group>"; };
-		99B710FA9C9D730644E9798FE49154E6 /* LEMVVMNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMNavigationController.m; sourceTree = "<group>"; };
-		9E3B0A2666C061B487DE61FFBF81628F /* LEMVVMModuleReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMModuleReflect.h; sourceTree = "<group>"; };
-		A27B43965A8F6D4AFA8BAF697B63AE91 /* XFURLParse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFURLParse.m; sourceTree = "<group>"; };
-		A93CEEF52449BF48713355EC086FF1CA /* UIView+XFLego.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+XFLego.h"; sourceTree = "<group>"; };
-		AA2EE6F093933289386D0CA9DE00BF24 /* UIView+ComponentSubView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ComponentSubView.h"; sourceTree = "<group>"; };
-		AA8510837AAD720C2F85B54C84B57F70 /* LEViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEViewModel.m; sourceTree = "<group>"; };
-		ADF80B74BFADE361D1F608B91734EC55 /* XFVIPERModuleHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFVIPERModuleHandler.m; sourceTree = "<group>"; };
-		AE43A1B4C0E679C56CB0C7D3C04E6144 /* XFRoutingLinkManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRoutingLinkManager.m; sourceTree = "<group>"; };
-		B0865BEF0A168D514F91A7371D7B8C43 /* XFRoutingLinkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRoutingLinkManager.h; sourceTree = "<group>"; };
-		B1B486E876CBE0F63A76FBDA9E92A8FE /* UIViewController+LEView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LEView.m"; sourceTree = "<group>"; };
-		B2436822DA71097F34429D649682BE08 /* XFRenderItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRenderItem.m; sourceTree = "<group>"; };
-		B27F5EA8BC09D80E550976683BFFC0AB /* XFInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFInteractor.m; sourceTree = "<group>"; };
-		B2E2B6B1EA9BBDEEEE0F90A6F85E3A0F /* XFControllerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFControllerFactory.m; sourceTree = "<group>"; };
-		B5CEFC5FE6B91A9244D99F71FED232C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B626DFA86968618EC3D298B2BD139B63 /* XFRenderItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRenderItem.h; sourceTree = "<group>"; };
-		B6F86348653502D7EC6F83C30BD0A95A /* NSObject+XFLegoSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+XFLegoSwizzle.h"; sourceTree = "<group>"; };
-		B7A6029D0B5808AA18EE7A2BD114291D /* XFInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFInteractor.h; sourceTree = "<group>"; };
-		B8F956221DFE3EB455C0CC407C68CE36 /* XFLegoVIPER-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XFLegoVIPER-dummy.m"; sourceTree = "<group>"; };
-		BC68660D94B294C65461825DE22263DF /* XFRoutingFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRoutingFactory.h; sourceTree = "<group>"; };
-		BC8C581DE57215CD0081C010F7C61655 /* LEMVVMConnector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMConnector.m; sourceTree = "<group>"; };
-		BD15D22B541C774DF5603E5E3D53C7B6 /* NSObject+XFLegoSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XFLegoSwizzle.m"; sourceTree = "<group>"; };
-		BFB8E445F923F117AAECD955A6EF4FB6 /* XFModuleReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFModuleReflect.h; sourceTree = "<group>"; };
-		C0A2BFF7587657A3AC0F29CC38A09B2F /* LEMVVMModuleFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMModuleFactory.m; sourceTree = "<group>"; };
-		C3C37502170DBEEE52872264C91FBBB1 /* XFPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFPresenter.h; sourceTree = "<group>"; };
-		C47F522177168635C09142F3AC2D7904 /* XFActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFActivity.h; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D58FDE2F52800A60AE95AC29B9419833 /* LEMVVMConnector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMConnector.h; sourceTree = "<group>"; };
-		D8B5615C0F60FC4ACC165020E80D51C5 /* LEMVVMModuleFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMModuleFactory.h; sourceTree = "<group>"; };
-		DCCB76F872E28946738E0A893930524F /* UIViewController+XFLego.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XFLego.m"; sourceTree = "<group>"; };
-		DDC417CD75E2C937DAB476ECD38D224B /* Pods-LegoExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LegoExample.modulemap"; sourceTree = "<group>"; };
-		DE1DBA177658134F3E94CF3DFAA11F4C /* XFControllerHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFControllerHandler.m; sourceTree = "<group>"; };
-		DF39E042B9F8C88F31383B7813394E7B /* XFComponentReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFComponentReflect.m; sourceTree = "<group>"; };
-		E0B708B50BF1C603200619B4CB84B093 /* Pods-LegoExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LegoExample-resources.sh"; sourceTree = "<group>"; };
-		E2140C3455B518AAE6A22E8F2C0CB616 /* UIViewController+ComponentBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ComponentBridge.m"; sourceTree = "<group>"; };
-		E75807312C1A7C3F634906BB61C28F27 /* UIView+ComponentSubView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ComponentSubView.m"; sourceTree = "<group>"; };
-		E887EC1C18635AC0E588259E6BAFE7D5 /* Pods-LegoExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LegoExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		E941FB7A49EFD393AED0297DB2EAF8FE /* UIViewController+XFLego.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XFLego.h"; sourceTree = "<group>"; };
-		EC5649C7D18DAA74965B48458DA56F43 /* XFComponentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFComponentViewController.m; sourceTree = "<group>"; };
-		F18113F89C07BA07F5B0D537C42447BB /* XFComponentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentViewController.h; sourceTree = "<group>"; };
-		F297D83577CD021B08C38D2776D10EB7 /* LEMVVMModuleHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMModuleHandler.h; sourceTree = "<group>"; };
-		F3034CC235EBDFD3F991C26B0239EC53 /* XFControllerRunnable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFControllerRunnable.h; sourceTree = "<group>"; };
-		F4D095A86F2A5584E67726728257F9E4 /* XFComponentRoutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentRoutable.h; sourceTree = "<group>"; };
-		F519DE10630DF365C476A62A38A88309 /* XFExpressPack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFExpressPack.m; sourceTree = "<group>"; };
-		F64BFC5D9ED183E027673A4632FAAD4E /* XFUserInterfacePort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFUserInterfacePort.h; sourceTree = "<group>"; };
-		F7EA5056FA59DAC2F6E4AA2D5F39DDF5 /* XFLegoVIPER.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XFLegoVIPER.xcconfig; sourceTree = "<group>"; };
-		F95035776FC03AD9A7CC344848DF8207 /* XFPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFPresenter.m; sourceTree = "<group>"; };
-		FD2D9C768330EE756D60CC98C38E7027 /* Pods-LegoExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LegoExample.release.xcconfig"; sourceTree = "<group>"; };
-		FFF1AF03F8FC0EC765262C435F581AF0 /* LEViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEViewModel.h; sourceTree = "<group>"; };
+		0276CD59436D68BEC8934C4B293AE74B /* XFLegoMarco.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFLegoMarco.h; path = XFLegoVIPER/XFLegoMarco.h; sourceTree = "<group>"; };
+		04152C91A30E312A61C96B5E91A69B5A /* NSObject+XFLegoCopy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XFLegoCopy.m"; sourceTree = "<group>"; };
+		05DF82AE72DDD7E15B349DE361C93784 /* XFEmitterPlug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFEmitterPlug.h; sourceTree = "<group>"; };
+		0686A49EC4E8458C819AC275017D11F8 /* XFRouting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRouting.m; sourceTree = "<group>"; };
+		07565EB4BCE24AD0F7D4C65732328178 /* UIViewController+XFLego.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XFLego.h"; sourceTree = "<group>"; };
+		0AFD4E1A35A75ABE46009829EAFD9A42 /* XFVIPERModuleHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFVIPERModuleHandler.m; sourceTree = "<group>"; };
+		0B566D4D5B0938AEECA65221734FE5CF /* XFInteractorPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFInteractorPort.h; sourceTree = "<group>"; };
+		0E1AC60A1AB319E688C3444EA53E130F /* XFComponentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFComponentManager.m; sourceTree = "<group>"; };
+		109BAE93745DE8C87D571288F19D15CD /* XFVIPERModuleHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFVIPERModuleHandler.h; sourceTree = "<group>"; };
+		126B0ADE1F8312FF3BB6E7D0A8A3226B /* XFLegoConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFLegoConfig.m; path = XFLegoVIPER/XFLegoConfig.m; sourceTree = "<group>"; };
+		142FA0281F6049EEB6EAF4585BF607F7 /* XFRoutingFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRoutingFactory.m; sourceTree = "<group>"; };
+		14DC1C86CAAE50AF0C4D07E3F47A4BAD /* XFComponentReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentReflect.h; sourceTree = "<group>"; };
+		1512FB516E9E3552BAAB730A07C0376C /* XFVIPERModuleReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFVIPERModuleReflect.m; sourceTree = "<group>"; };
+		17684A28773970E3543EF41C81468D19 /* LEMVVMModuleHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMModuleHandler.h; sourceTree = "<group>"; };
+		18313E1C96934CE3C01290B31FBE6BA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		19CD2687254FC23463ED35B05594E513 /* LEMVVMModuleHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMModuleHandler.m; sourceTree = "<group>"; };
+		1BAA9D7D46C2FCF94B3E28D1F367C842 /* XFRouting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRouting.h; sourceTree = "<group>"; };
+		1BFB09FBEB0E34D908C7BF22D9453AE3 /* XFUserInterfacePort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFUserInterfacePort.h; sourceTree = "<group>"; };
+		1CB938A2DDEA131D6F61EBE14A338C20 /* XFControllerRunnable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFControllerRunnable.h; sourceTree = "<group>"; };
+		1D249D72C1A9C6AAF80272B12C6E1456 /* UIViewController+ComponentBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ComponentBridge.h"; sourceTree = "<group>"; };
+		20D1677BE625C611611BA66249C2B282 /* Pods-LegoExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LegoExample.release.xcconfig"; sourceTree = "<group>"; };
+		20DBCE5EDF4CE169775547D39CA0C900 /* XFComponentRoutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentRoutable.h; sourceTree = "<group>"; };
+		210FF577F94B1A41C3E90D82524DCD9B /* Pods-LegoExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LegoExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		29D17532DD6C1D601E0D09E9D06BB964 /* XFPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFPresenter.h; sourceTree = "<group>"; };
+		2A12DB35D876F99BF7536C7FE560A71D /* XFInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFInteractor.h; sourceTree = "<group>"; };
+		2A5B02E94B51856621AAAF0AEB6F7B86 /* XFRenderItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRenderItem.h; sourceTree = "<group>"; };
+		2B26A39D552DA611909CDD43AAEA392D /* Pods-LegoExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LegoExample-umbrella.h"; sourceTree = "<group>"; };
+		2C50BE91A801663C15C4C044DF19BCBD /* LEDataDriverProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEDataDriverProtocol.h; sourceTree = "<group>"; };
+		2CF8756D12CAD5B86B95C7B02CCFC22D /* XFDataManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFDataManager.m; sourceTree = "<group>"; };
+		3187F81FE449B58D0FD6C80CA28B8BB5 /* XFExpressDirver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFExpressDirver.h; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		335F31FFB3AD70B8D4B20FE789C985A0 /* XFRoutingLinkManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRoutingLinkManager.m; sourceTree = "<group>"; };
+		342D764A9780BCEEF635F8A0D2D6DBCD /* XFDataManagerPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFDataManagerPort.h; sourceTree = "<group>"; };
+		349EFE69CD659B736E1C22B6FE1AE9EE /* XFPipe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFPipe.m; sourceTree = "<group>"; };
+		3A04A45EB1D371280FE57F40E119B2BB /* XFURLRoutePlug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFURLRoutePlug.h; sourceTree = "<group>"; };
+		3BB5281E6D677B883D529BEAB15A4C1A /* XFLegoVIPER-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFLegoVIPER-prefix.pch"; sourceTree = "<group>"; };
+		3BE062FAF18E569BC1D395EA60F3E92D /* XFURLRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFURLRoute.m; sourceTree = "<group>"; };
+		3DD62F1C662E86E6222D4FB9D708ED52 /* NSObject+XFPipe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XFPipe.m"; sourceTree = "<group>"; };
+		4045C7DAFF92F2E29F7CF33C0D03759C /* Pods-LegoExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LegoExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		40E8AA636F9FF3C228A7497AA90B8B6C /* XFURLRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFURLRoute.h; sourceTree = "<group>"; };
+		4104B9F0D01D1C9F8ACDDA704EFBEE1E /* XFLegoVIPER.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XFLegoVIPER.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		41A41B52CBD9509E1E56CCE7E0A1D886 /* XFComponentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentViewController.h; sourceTree = "<group>"; };
+		428070898FCA36CE02F058EFBD738E08 /* XFUInterfaceFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFUInterfaceFactory.h; sourceTree = "<group>"; };
+		440395AC28756329D89827CE9EF5DFEE /* NSObject+XFPipe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+XFPipe.h"; sourceTree = "<group>"; };
+		47E19AFC38023DD463EE5EEFCE710E21 /* UIView+XFLego.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+XFLego.h"; sourceTree = "<group>"; };
+		48C1985FEB78C2C3D0FB72BBA6416169 /* XFEventBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFEventBus.m; sourceTree = "<group>"; };
+		493458E563D87E6D701CDEAC0A358469 /* LEViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEViewController.h; sourceTree = "<group>"; };
+		49A156F2D8A002FC6838EEF473DAED20 /* XFComponentUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentUI.h; sourceTree = "<group>"; };
+		4B348596F1574DF2E38DBBB5651F1686 /* NSObject+XFLegoCopy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+XFLegoCopy.h"; sourceTree = "<group>"; };
+		4C6DDEC0F0FADF4BB6F4DCDBD3DF48A9 /* XFApplicationEmitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFApplicationEmitter.m; sourceTree = "<group>"; };
+		4D7915D30EBBA3F09D5F5BE6A38FE987 /* XFUIOperatorPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFUIOperatorPort.h; sourceTree = "<group>"; };
+		4D80062A1FA2045697E7DAD33B5CB594 /* XFLegoVIPER.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFLegoVIPER.h; path = XFLegoVIPER/XFLegoVIPER.h; sourceTree = "<group>"; };
+		5009114A46071F5747A3D8B78D0E0118 /* XFComponentEventResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentEventResponder.h; sourceTree = "<group>"; };
+		5104455E6265C11523D74F537C4B4E62 /* XFControllerReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFControllerReflect.m; sourceTree = "<group>"; };
+		51EBFB00BE2DDF320462B2BC85C2EB46 /* XFActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFActivity.m; sourceTree = "<group>"; };
+		52A56A206A03DD0C987E9EAF497748BE /* XFLegoVIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XFLegoVIPER.release.xcconfig; sourceTree = "<group>"; };
+		52ABC2D421561E26EE80A59F5A0F6BE4 /* UIView+XFLego.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+XFLego.m"; sourceTree = "<group>"; };
+		543156C1E6E23B67F1F12D5A72C1D1BC /* XFInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFInteractor.m; sourceTree = "<group>"; };
+		54FACA3C13DA16B3E6DA261743D193C0 /* UIViewController+ComponentUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ComponentUI.h"; sourceTree = "<group>"; };
+		578A4578DFF2FD505A331BDCAB1410BF /* XFComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentManager.h; sourceTree = "<group>"; };
+		587498266131674A86F5ABCC46D8F824 /* XFLegoVIPER-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XFLegoVIPER-Info.plist"; sourceTree = "<group>"; };
+		5AD7CAD0DEA7D46DC9696ECE5C22BBCD /* UIViewController+LEView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LEView.h"; sourceTree = "<group>"; };
+		5D688DC7EEA4A50BD41C65D4F1042DDC /* XFUInterfaceFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFUInterfaceFactory.m; sourceTree = "<group>"; };
+		5E3977AF77699FAD2BA5DA651665C0FC /* XFLegoVIPER.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XFLegoVIPER.modulemap; sourceTree = "<group>"; };
+		5EB15723E03154BB6754A16943E84D64 /* LEMVVMIntent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMIntent.h; sourceTree = "<group>"; };
+		5F1E249497EC480D7482C4FDA4176E98 /* UIView+ComponentSubView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ComponentSubView.m"; sourceTree = "<group>"; };
+		61DD7F810D460EE22860FDDE9AF2563E /* XFURLInterceptorChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFURLInterceptorChain.m; sourceTree = "<group>"; };
+		645D035BBC90E802B6EF1A33E063DB1B /* XFModuleReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFModuleReflect.h; sourceTree = "<group>"; };
+		6745FB8120E096BB7CBFAF9F587575C1 /* Pods-LegoExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LegoExample.debug.xcconfig"; sourceTree = "<group>"; };
+		675E2DDE3744C9C2D855CEDEFE8911DF /* XFExpressDirver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFExpressDirver.m; sourceTree = "<group>"; };
+		67A2CE70323EF07FBC269671002745D5 /* Pods-LegoExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LegoExample.modulemap"; sourceTree = "<group>"; };
+		680960033E526C366D4D514650B34A15 /* XFComponentHandlerPlug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentHandlerPlug.h; sourceTree = "<group>"; };
+		692C78FE5E9E5EDAA2D2673E807F44A7 /* LEViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEViewController.m; sourceTree = "<group>"; };
+		6CE97FF8A73E5B2713B0F3CA61D7A26B /* XFURLInterceptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFURLInterceptor.m; sourceTree = "<group>"; };
+		6E6636C0E79D675FC8471A98BC17AD02 /* Pods-LegoExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LegoExample-Info.plist"; sourceTree = "<group>"; };
+		71A264679DD4AF2065123E7F0DAC013F /* XFVIPERModuleAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFVIPERModuleAssembly.m; sourceTree = "<group>"; };
+		72D33113C1CDCAC580E308272BCD3AB6 /* XFActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFActivity.h; sourceTree = "<group>"; };
+		74ADD3D26594005728CA35032E4D0AD6 /* XFEventBus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFEventBus.h; sourceTree = "<group>"; };
+		74D54CCD9EBFE0F4042CDF462F257F2D /* XFLegoVIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XFLegoVIPER.framework; path = XFLegoVIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		752488C6FA18F141399153FC47B0FCED /* UIViewController+XFLego.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XFLego.m"; sourceTree = "<group>"; };
+		76FB3E13303237F240DC3EB7595F1702 /* LEMVVMModuleFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMModuleFactory.m; sourceTree = "<group>"; };
+		77F66D3CACC2E294814539F234FF053F /* LEViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEViewProtocol.h; sourceTree = "<group>"; };
+		78A340B7DE6651B03588247A4A2B6B43 /* LEMVVMNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMNavigationController.h; sourceTree = "<group>"; };
+		7B012C8F094052314227CE23E0F8203C /* XFPipePort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFPipePort.h; sourceTree = "<group>"; };
+		7BA8700C3AAC347577BAF2E27AD1AAD5 /* XFVIPERModuleRunnable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFVIPERModuleRunnable.h; sourceTree = "<group>"; };
+		7BFBF07021E97C7C554D5DC6050FDE6E /* XFComponentBindEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentBindEvent.h; sourceTree = "<group>"; };
+		7DF8119E9E92AA2A7D58EED3ED1280B6 /* LEMVVMConnector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMConnector.m; sourceTree = "<group>"; };
+		7E0944853F9AB878987F0A580DC450DD /* XFDataManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFDataManager.h; sourceTree = "<group>"; };
+		8015322191842FF0AA53A258FA358231 /* XFComponentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFComponentViewController.m; sourceTree = "<group>"; };
+		80C5B687AF0BC7374DD85F961F4D4DA2 /* LEViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEViewModel.h; sourceTree = "<group>"; };
+		865E664CB5D639137301EFB7433D9A4A /* XFRoutingLinkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRoutingLinkManager.h; sourceTree = "<group>"; };
+		87EBC218F0514C63481BE1F08D9EAC23 /* XFComponentHandlerMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFComponentHandlerMatcher.m; sourceTree = "<group>"; };
+		89D3187FDC34DAA77B8CF39A88F2E929 /* XFRoutingFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRoutingFactory.h; sourceTree = "<group>"; };
+		8EEA87DC6165B322510DCBFBCBF3324E /* LEMVVMModuleReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMModuleReflect.m; sourceTree = "<group>"; };
+		8F899E52FF92A93A8ADB9E86D9F203B4 /* XFApplicationEmitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFApplicationEmitter.h; sourceTree = "<group>"; };
+		9603AD6125EFC776C0CFE0DB6B7E2B51 /* XFPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFPresenter.m; sourceTree = "<group>"; };
+		96B562893EEAAD7F391EC8F144D553FD /* XFExpressPiece.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFExpressPiece.m; sourceTree = "<group>"; };
+		98E9D6328F864C4B5A9C602ABB2C122A /* XFControllerHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFControllerHandler.h; sourceTree = "<group>"; };
+		9A9DE5B493C7A53D9A0FB423E89C6E4E /* UIView+ComponentSubView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ComponentSubView.h"; sourceTree = "<group>"; };
+		9CE5337398F4959945E51BA651501D61 /* XFRenderItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRenderItem.m; sourceTree = "<group>"; };
+		9D69434D2E36A40E2EA20367DC427FB3 /* XFRenderData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFRenderData.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DC31262603380AECCBBE3BD2450535D /* XFLegoVIPER-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XFLegoVIPER-dummy.m"; sourceTree = "<group>"; };
+		A212A3ABF877AD8565B3AB551D2B8E8B /* XFURLParse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFURLParse.h; sourceTree = "<group>"; };
+		A2D801FA28A572E490540A63048D84B0 /* Pods-LegoExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LegoExample-dummy.m"; sourceTree = "<group>"; };
+		A9ABC6838D75D7B8C48D51E60B8C0682 /* XFUIBus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFUIBus.m; sourceTree = "<group>"; };
+		AADBB9CA40B7C5EFC8EAD61746B32EB0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AC8A6B841C4E827D56BF869E2DE0A5DD /* XFLegoVIPER-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFLegoVIPER-umbrella.h"; sourceTree = "<group>"; };
+		AD190E0B38E6A2A1C44C71073AEF8A75 /* NSObject+XFLegoSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+XFLegoSwizzle.h"; sourceTree = "<group>"; };
+		AF4944DFAF8A08F6E52A9069B8A29503 /* UIViewController+ComponentUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ComponentUI.m"; sourceTree = "<group>"; };
+		B01E483585815AE5B1AB36F3CBB89929 /* XFControllerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFControllerFactory.h; sourceTree = "<group>"; };
+		B2E9C9B82B2AB0003F996C358113351C /* XFControllerReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFControllerReflect.h; sourceTree = "<group>"; };
+		B50A80CC70E8220F3FF343FC2C6EC21F /* XFUIBus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFUIBus.h; sourceTree = "<group>"; };
+		BDF3D33ED28BC8A1746635550D7B8640 /* LEViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEViewModel.m; sourceTree = "<group>"; };
+		BE5B7B546EBDD4AB733A95371B380DBA /* NSObject+XFLegoInvokeMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+XFLegoInvokeMethod.h"; sourceTree = "<group>"; };
+		C024FEECD3CE322A89E1B88662C979DA /* XFComponentReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFComponentReflect.m; sourceTree = "<group>"; };
+		C898C337E60C4D960B1AD150D5563B05 /* LEMVVMNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LEMVVMNavigationController.m; sourceTree = "<group>"; };
+		CE7EA3F8FD9A868499B8C73FF436CC45 /* XFEventHandlerPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFEventHandlerPort.h; sourceTree = "<group>"; };
+		CF470172B6A8043690A3F6ADD624F15F /* XFExpressPiece.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFExpressPiece.h; sourceTree = "<group>"; };
+		D1E33794B156621AF94E29A55E129D3F /* XFVIPERModuleAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFVIPERModuleAssembly.h; sourceTree = "<group>"; };
+		D289823401016B967EA1A0550E939810 /* XFURLInterceptorChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFURLInterceptorChain.h; sourceTree = "<group>"; };
+		D2C747FC45C3D4F2E800DF702430F457 /* XFPipe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFPipe.h; sourceTree = "<group>"; };
+		D392E7D820CB73C6D05E48E6DDC39747 /* NSObject+XFLegoInvokeMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XFLegoInvokeMethod.m"; sourceTree = "<group>"; };
+		D503038ADD94381401BFA4B1164BDC5E /* XFExpressPack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFExpressPack.h; sourceTree = "<group>"; };
+		D9DB9BEA9682FA6C286E94B538A3B3E7 /* UIViewController+ComponentBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ComponentBridge.m"; sourceTree = "<group>"; };
+		DACA1837E37AE4299848B43C81ABD0E0 /* XFVIPERModuleReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFVIPERModuleReflect.h; sourceTree = "<group>"; };
+		DD96FBFB28396F1609378E2FA60E06EF /* NSObject+XFLegoSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XFLegoSwizzle.m"; sourceTree = "<group>"; };
+		DEDE2D5ED2689F1CF226D3DFBB57C74B /* XFURLInterceptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFURLInterceptor.h; sourceTree = "<group>"; };
+		E004CC2ED1D13F1AD6D5538533A71D16 /* Pods-LegoExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LegoExample-frameworks.sh"; sourceTree = "<group>"; };
+		E0C5C39BDC0861F686526EE2ABF132AD /* XFModuleReflect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFModuleReflect.m; sourceTree = "<group>"; };
+		E20266D1734504EB27CD6BDE4BCB5D23 /* XFControllerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFControllerFactory.m; sourceTree = "<group>"; };
+		E2BA24B52360BF45713CCB287BC0E96C /* LEMVVMConnector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMConnector.h; sourceTree = "<group>"; };
+		E3AC3DF87E6AF6BDB7C9601793F8CC55 /* XFExpressPack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFExpressPack.m; sourceTree = "<group>"; };
+		E990AE2772670383E31B8DE89290A3C3 /* UIViewController+LEView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LEView.m"; sourceTree = "<group>"; };
+		EB5E5FEB653D3ADB17679A3447F5736C /* XFURLParse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFURLParse.m; sourceTree = "<group>"; };
+		EE3E4CE0A8C8DF8B52599222D4E05309 /* XFWireFramePort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFWireFramePort.h; sourceTree = "<group>"; };
+		EEADA6F8772CA722118B1D6A3AECEEE5 /* Pods_LegoExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LegoExample.framework; path = "Pods-LegoExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B2CB0069EBF3089CDE12DF80DA69A7 /* XFLegoConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFLegoConfig.h; path = XFLegoVIPER/XFLegoConfig.h; sourceTree = "<group>"; };
+		F33932F0110DFD4E525224EC4919B713 /* XFLegoVIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XFLegoVIPER.debug.xcconfig; sourceTree = "<group>"; };
+		F49B044E61A2A5F7D618F4FF3AABFF9F /* XFControllerHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XFControllerHandler.m; sourceTree = "<group>"; };
+		F4D66B29D2340DE9BAB40472957C4765 /* XFExpressPiecePort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFExpressPiecePort.h; sourceTree = "<group>"; };
+		F7E815EEE7B20A826DFB90A1220D16BF /* XFRenderData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFRenderData.h; sourceTree = "<group>"; };
+		F9088CF51096EFF1C3C96B8A29505308 /* LEMVVMModuleReflect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMModuleReflect.h; sourceTree = "<group>"; };
+		FA738AA77C2534B74C3A76809A501745 /* LEMVVMModuleFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LEMVVMModuleFactory.h; sourceTree = "<group>"; };
+		FA7C91E736116892E3005FEA75708A10 /* XFComponentHandlerMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFComponentHandlerMatcher.h; sourceTree = "<group>"; };
+		FE77E15CEB5ED96D78ACA1DE97C1A033 /* XFEventReceivable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XFEventReceivable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06500C308FE4122FD19DD0D3B74DC529 /* Frameworks */ = {
+		002DC69583DC7F799B2BBD9911AB5A22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE6DB8C549F9977178EF131887AA404D /* Foundation.framework in Frameworks */,
+				8AB317CA51A186FB94DE4A2DA8FA82A0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B056E464960C759A1E31B7679481F1A3 /* Frameworks */ = {
+		7E3C0BB288A62B7124A9C4F13061E68F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D7012CC64FDCDFD800C3805D5DA9AE /* Foundation.framework in Frameworks */,
+				44536E29BB03B88DF91F0B12656FC407 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		030B318D8CB70C29D36AB17A1929D238 /* PlugInterface */ = {
+		01F749DC86EA4846A5D88917D7DCF93E /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				010670E0897C3809F66D5F9ADAFA1DF3 /* XFComponentHandlerPlug.h */,
-				F4D095A86F2A5584E67726728257F9E4 /* XFComponentRoutable.h */,
-				48A3CEB888CD8AC7F9EE7451B9C60E59 /* XFURLRoutePlug.h */,
-			);
-			name = PlugInterface;
-			path = PlugInterface;
-			sourceTree = "<group>";
-		};
-		086ABC84C196A58444C1D29E792A3878 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				B0865BEF0A168D514F91A7371D7B8C43 /* XFRoutingLinkManager.h */,
-				AE43A1B4C0E679C56CB0C7D3C04E6144 /* XFRoutingLinkManager.m */,
-				00E9AAD79A92B939F093383ABA013F40 /* XFVIPERModuleAssembly.h */,
-				6E3995EF9C29D238E8337B9BD02F8E76 /* XFVIPERModuleAssembly.m */,
-			);
-			name = Manager;
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		0ED681711DC926CF6DBE0C46DB76B91F /* Layer */ = {
-			isa = PBXGroup;
-			children = (
-				AA2EE6F093933289386D0CA9DE00BF24 /* UIView+ComponentSubView.h */,
-				E75807312C1A7C3F634906BB61C28F27 /* UIView+ComponentSubView.m */,
-				854F669B10C9CE43479229C2F14A1611 /* UIViewController+ComponentUI.h */,
-				4E51005885386EBA1E2777711BB9F989 /* UIViewController+ComponentUI.m */,
-			);
-			name = Layer;
-			path = Layer;
-			sourceTree = "<group>";
-		};
-		1F3A38E8F66D18D23C2B275ADC6221E6 /* Recognizer */ = {
-			isa = PBXGroup;
-			children = (
-				15DA6B28D3FF18B3C3406A8B51222327 /* XFControllerReflect.h */,
-				0B7DED031F4781D9B3D30B1260C077D2 /* XFControllerReflect.m */,
-			);
-			name = Recognizer;
-			path = Recognizer;
-			sourceTree = "<group>";
-		};
-		204854BB659985DD2B1CC275BE582541 /* Layer */ = {
-			isa = PBXGroup;
-			children = (
-				3D7C5B62A2A97656E5A30C1381C142F0 /* LEViewController.h */,
-				530AEB9A5CF3EACF2A4EE9C758CC839F /* LEViewController.m */,
-				FFF1AF03F8FC0EC765262C435F581AF0 /* LEViewModel.h */,
-				AA8510837AAD720C2F85B54C84B57F70 /* LEViewModel.m */,
-				177E7F71E9AD8C5A13612EA5B08A6E01 /* UIViewController+LEView.h */,
-				B1B486E876CBE0F63A76FBDA9E92A8FE /* UIViewController+LEView.m */,
-			);
-			name = Layer;
-			path = Layer;
-			sourceTree = "<group>";
-		};
-		2502192CF4980ED9975312ABF1EA060B /* Runnable */ = {
-			isa = PBXGroup;
-			children = (
-				F3034CC235EBDFD3F991C26B0239EC53 /* XFControllerRunnable.h */,
-			);
-			name = Runnable;
-			path = Runnable;
-			sourceTree = "<group>";
-		};
-		3A0DE543BAAE260744132ABCDC690C32 /* WorkBus */ = {
-			isa = PBXGroup;
-			children = (
-				08A44508E7822EE31B231B1C40085B43 /* XFEventBus.h */,
-				7E256922A40E5AA36E197A143C29B923 /* XFEventBus.m */,
-				6B7D148B8232354E91FD66DDE8289BB2 /* XFUIBus.h */,
-				1E32C7F54B7A15D4469408F77759232A /* XFUIBus.m */,
-			);
-			name = WorkBus;
-			path = WorkBus;
-			sourceTree = "<group>";
-		};
-		4C42559A9DF2953D10C2F72C92922415 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				0E0C58F37889DA25696BAAFC32DEE74E /* XFControllerFactory.h */,
-				B2E2B6B1EA9BBDEEEE0F90A6F85E3A0F /* XFControllerFactory.m */,
-			);
-			name = Factory;
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		4F1FA573EC154780BAEC75B8FA47E1FF /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				8B5AA56E48EEECBB1577CE59D270AFF8 /* Factory */,
-				A5E3E9C5DD87F7791BC332CD5E07C6A5 /* Manager */,
-				F6825EFA7F834713AD535754A2715074 /* Recognizer */,
-				3A0DE543BAAE260744132ABCDC690C32 /* WorkBus */,
-			);
-			name = Component;
-			path = Component;
-			sourceTree = "<group>";
-		};
-		4F6B2CDB886069564E443287B32D8D45 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B210FF244F799FF43942C2194CBEB0DD /* XFLegoVIPER */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		503D756A7A91BF9FD507459C1C73EA3A /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				5977843AA1A0AB52AE137F2B98DEF2E0 /* NSObject+XFLegoCopy.h */,
-				1BA921AE9CF52B6F89B18B335A2F8F72 /* NSObject+XFLegoCopy.m */,
-				7E8A3C35BE352BC41D260E86A958183B /* NSObject+XFLegoInvokeMethod.h */,
-				4CAC348F23C3FFC0DF2014706B5095D7 /* NSObject+XFLegoInvokeMethod.m */,
-				B6F86348653502D7EC6F83C30BD0A95A /* NSObject+XFLegoSwizzle.h */,
-				BD15D22B541C774DF5603E5E3D53C7B6 /* NSObject+XFLegoSwizzle.m */,
-			);
-			name = Util;
-			path = Util;
-			sourceTree = "<group>";
-		};
-		50C3D745237F532AC16B3EE3ED0933D3 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				7C17885A51BFE6565BE967A209368279 /* XFDataManagerPort.h */,
-				21F9AA5EF17594990FE93C8628633FA0 /* XFEventHandlerPort.h */,
-				0564564BA47CEC03BD3E4A4BFA26C9F7 /* XFInteractorPort.h */,
-				67D251499C989F67884C2669F4FD2D44 /* XFUIOperatorPort.h */,
-				F64BFC5D9ED183E027673A4632FAAD4E /* XFUserInterfacePort.h */,
-				34869760F529D2C47E019A8D6B4853EF /* XFWireFramePort.h */,
+				7BFBF07021E97C7C554D5DC6050FDE6E /* XFComponentBindEvent.h */,
+				5009114A46071F5747A3D8B78D0E0118 /* XFComponentEventResponder.h */,
+				49A156F2D8A002FC6838EEF473DAED20 /* XFComponentUI.h */,
 			);
 			name = Interface;
 			path = Interface;
 			sourceTree = "<group>";
 		};
-		510EC69EF31081B8F96F6C92366CDA45 /* LEGOAbsModule */ = {
+		024A687DA93F452BAC31EA7BCEC19993 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
-				A0855B09CCDE845113AF2E26D4152CC1 /* Interface */,
-				0ED681711DC926CF6DBE0C46DB76B91F /* Layer */,
-				606008CB862EB35E58E2DA5B112AB8C9 /* Recognizer */,
-			);
-			name = LEGOAbsModule;
-			path = LEGOAbsModule;
-			sourceTree = "<group>";
-		};
-		54A288B73F7253136AC4F1097B7D06CC /* Extra */ = {
-			isa = PBXGroup;
-			children = (
-				D58FDE2F52800A60AE95AC29B9419833 /* LEMVVMConnector.h */,
-				BC8C581DE57215CD0081C010F7C61655 /* LEMVVMConnector.m */,
-				05F5F0AC50B710CE99CAF4C00C251414 /* LEMVVMNavigationController.h */,
-				99B710FA9C9D730644E9798FE49154E6 /* LEMVVMNavigationController.m */,
-			);
-			name = Extra;
-			path = Extra;
-			sourceTree = "<group>";
-		};
-		55DE6424244F16D12A88C7DD56FA0F08 /* VIPERModule */ = {
-			isa = PBXGroup;
-			children = (
-				B011D3AFF401F7982603AC5125DC9801 /* Express */,
-				837100C143B6BA2C0FE89D4F69D56FD5 /* Factory */,
-				50C3D745237F532AC16B3EE3ED0933D3 /* Interface */,
-				CE41EC931B4A76204F99446CE8B048E0 /* Layer */,
-				086ABC84C196A58444C1D29E792A3878 /* Manager */,
-				FCC029ED9C605B5456C8C069112B1E2B /* Recognizer */,
-			);
-			name = VIPERModule;
-			path = VIPERModule;
-			sourceTree = "<group>";
-		};
-		598A917FA28F1E4B659E0A7B32F41BDB /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				4F1FA573EC154780BAEC75B8FA47E1FF /* Component */,
-				510EC69EF31081B8F96F6C92366CDA45 /* LEGOAbsModule */,
-				030B318D8CB70C29D36AB17A1929D238 /* PlugInterface */,
-			);
-			name = Core;
-			path = Core;
-			sourceTree = "<group>";
-		};
-		606008CB862EB35E58E2DA5B112AB8C9 /* Recognizer */ = {
-			isa = PBXGroup;
-			children = (
-				BFB8E445F923F117AAECD955A6EF4FB6 /* XFModuleReflect.h */,
-				93F538D281B7533CCD714353ADB43B28 /* XFModuleReflect.m */,
-			);
-			name = Recognizer;
-			path = Recognizer;
-			sourceTree = "<group>";
-		};
-		6379273A514522CD7605E20E8230A2F4 /* Handler */ = {
-			isa = PBXGroup;
-			children = (
-				519FD6ABFC9BC5203D59F017E219A10C /* XFControllerHandler.h */,
-				DE1DBA177658134F3E94CF3DFAA11F4C /* XFControllerHandler.m */,
-			);
-			name = Handler;
-			path = Handler;
-			sourceTree = "<group>";
-		};
-		649AC473E67C1DE018F2908B74CE491C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A2AE60C207AE9CA09FA06C6B2F71FFA9 /* Pods-LegoExample */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6A1ADFF38A812EFD5DABE42340AC9D36 /* Handler */ = {
-			isa = PBXGroup;
-			children = (
-				0B97ADE84FC11B23B5500D6ABB80DFF1 /* XFVIPERModuleHandler.h */,
-				ADF80B74BFADE361D1F608B91734EC55 /* XFVIPERModuleHandler.m */,
-			);
-			name = Handler;
-			path = Handler;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		75B733D54BACC86FCAFF2D926AEF3B52 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				AAFCD9BE8C60F482FA93D53D6054DF72 /* Modules */,
-				A51F5F1A257E875BA0DAA64358B8C9E9 /* Route */,
-			);
-			name = Extension;
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				4F6B2CDB886069564E443287B32D8D45 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9D6CE84BA288AE69F714C10A1094155B /* Products */,
-				649AC473E67C1DE018F2908B74CE491C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		81AEBA4B7C38C39F070400B060E73429 /* Layer */ = {
-			isa = PBXGroup;
-			children = (
-				06FAA1483569304DFB83BBACACD008C7 /* UIViewController+ComponentBridge.h */,
-				E2140C3455B518AAE6A22E8F2C0CB616 /* UIViewController+ComponentBridge.m */,
-				F18113F89C07BA07F5B0D537C42447BB /* XFComponentViewController.h */,
-				EC5649C7D18DAA74965B48458DA56F43 /* XFComponentViewController.m */,
+				9A9DE5B493C7A53D9A0FB423E89C6E4E /* UIView+ComponentSubView.h */,
+				5F1E249497EC480D7482C4FDA4176E98 /* UIView+ComponentSubView.m */,
+				54FACA3C13DA16B3E6DA261743D193C0 /* UIViewController+ComponentUI.h */,
+				AF4944DFAF8A08F6E52A9069B8A29503 /* UIViewController+ComponentUI.m */,
 			);
 			name = Layer;
 			path = Layer;
 			sourceTree = "<group>";
 		};
-		82D92C209C82FD063D7EFAAE08665228 /* VIPER */ = {
+		0271514DE7A84758213E2848FB7B4683 /* Recognizer */ = {
 			isa = PBXGroup;
 			children = (
-				6A1ADFF38A812EFD5DABE42340AC9D36 /* Handler */,
-				A42CACE7DCE251E9C689AE69E9988469 /* Runnable */,
-				55DE6424244F16D12A88C7DD56FA0F08 /* VIPERModule */,
+				F9088CF51096EFF1C3C96B8A29505308 /* LEMVVMModuleReflect.h */,
+				8EEA87DC6165B322510DCBFBCBF3324E /* LEMVVMModuleReflect.m */,
+			);
+			name = Recognizer;
+			path = Recognizer;
+			sourceTree = "<group>";
+		};
+		031D2FE07C4C253EB62988018403D172 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				428070898FCA36CE02F058EFBD738E08 /* XFUInterfaceFactory.h */,
+				5D688DC7EEA4A50BD41C65D4F1042DDC /* XFUInterfaceFactory.m */,
+			);
+			name = Factory;
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		0A40B9D5B7C9128BA310B69D3BCEE72F /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				DEDE2D5ED2689F1CF226D3DFBB57C74B /* XFURLInterceptor.h */,
+				6CE97FF8A73E5B2713B0F3CA61D7A26B /* XFURLInterceptor.m */,
+				D289823401016B967EA1A0550E939810 /* XFURLInterceptorChain.h */,
+				61DD7F810D460EE22860FDDE9AF2563E /* XFURLInterceptorChain.m */,
+			);
+			name = Interceptor;
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		0BF0B04C63F7BBC8174300641221BD9E /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				F524D03286C10D0BA50B1CD2F0DB21A4 /* Handler */,
+				9E73B5C42E9DC7443A63FEF4A70BC784 /* Runnable */,
+				541DC21466DC5ED3A7381A51F20C1CE4 /* VIPERModule */,
 			);
 			name = VIPER;
 			path = VIPER;
 			sourceTree = "<group>";
 		};
-		837100C143B6BA2C0FE89D4F69D56FD5 /* Factory */ = {
+		0C644F8FD37D0AD9A95FC744387199D5 /* Pods-LegoExample */ = {
 			isa = PBXGroup;
 			children = (
-				BC68660D94B294C65461825DE22263DF /* XFRoutingFactory.h */,
-				581CDEAEA94CD22C7C6475737A31DB0F /* XFRoutingFactory.m */,
-			);
-			name = Factory;
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		88714597A9B15E1539ECBC6659609EE9 /* MVC */ = {
-			isa = PBXGroup;
-			children = (
-				F462E000DA8B6EA6482CA6A3C1A40FCB /* Controller */,
-				6379273A514522CD7605E20E8230A2F4 /* Handler */,
-				2502192CF4980ED9975312ABF1EA060B /* Runnable */,
-			);
-			name = MVC;
-			path = MVC;
-			sourceTree = "<group>";
-		};
-		8B5AA56E48EEECBB1577CE59D270AFF8 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				7779141FA999CEF1484E043DDECA1239 /* XFUInterfaceFactory.h */,
-				89D62F7754BB309E73BE769C4479809F /* XFUInterfaceFactory.m */,
-			);
-			name = Factory;
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		92D66DC613C696B03B60822F273E9740 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				D8B5615C0F60FC4ACC165020E80D51C5 /* LEMVVMModuleFactory.h */,
-				C0A2BFF7587657A3AC0F29CC38A09B2F /* LEMVVMModuleFactory.m */,
-			);
-			name = Factory;
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		97D6E77CE0469B02F6635148F767A231 /* MVVM */ = {
-			isa = PBXGroup;
-			children = (
-				54A288B73F7253136AC4F1097B7D06CC /* Extra */,
-				B24E46A213F95B072FBA3CF31EFD671C /* Handler */,
-				AC9C884149328402A73892D9E13A1656 /* MVVMModule */,
-			);
-			name = MVVM;
-			path = MVVM;
-			sourceTree = "<group>";
-		};
-		98CBAF04CF999AC4398766058C0714EA /* URLRoute */ = {
-			isa = PBXGroup;
-			children = (
-				29F1146EB38B06B1CAD932BA09931B57 /* XFURLParse.h */,
-				A27B43965A8F6D4AFA8BAF697B63AE91 /* XFURLParse.m */,
-				50C17CAD5A717901EB0FDC14BC3B927F /* XFURLRoute.h */,
-				138BD3E16684477A5B1576B3AED1B52D /* XFURLRoute.m */,
-			);
-			name = URLRoute;
-			path = URLRoute;
-			sourceTree = "<group>";
-		};
-		9D6CE84BA288AE69F714C10A1094155B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				203B6C7F06FC7E22FBEA9639A7EC257F /* Pods_LegoExample.framework */,
-				1147F64B1EACA854F84BCAD02E3D1179 /* XFLegoVIPER.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9ED89DD0732746DD7B55D0CD5E7E79E1 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				332F38D73CAA3D48CADF9DE61C865E15 /* LEDataDriverProtocol.h */,
-				83D9785A75C26F90D4A0CCDC83E3A999 /* LEViewProtocol.h */,
-			);
-			name = Interface;
-			path = Interface;
-			sourceTree = "<group>";
-		};
-		A0855B09CCDE845113AF2E26D4152CC1 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				6AA43EEF701FC26BD0454E56710C855A /* XFComponentBindEvent.h */,
-				90CF3E92B111E66FA5DDE085796CB14E /* XFComponentUI.h */,
-				3D0AFF307630517E784AF2216907B46C /* XFComponentUIEvent.h */,
-			);
-			name = Interface;
-			path = Interface;
-			sourceTree = "<group>";
-		};
-		A2AE60C207AE9CA09FA06C6B2F71FFA9 /* Pods-LegoExample */ = {
-			isa = PBXGroup;
-			children = (
-				B5CEFC5FE6B91A9244D99F71FED232C0 /* Info.plist */,
-				DDC417CD75E2C937DAB476ECD38D224B /* Pods-LegoExample.modulemap */,
-				82ABF0A7A6EA20E6EA0DE87AF0BBA4AC /* Pods-LegoExample-acknowledgements.markdown */,
-				E887EC1C18635AC0E588259E6BAFE7D5 /* Pods-LegoExample-acknowledgements.plist */,
-				63917EB47A334B5540F8CF38751BFB16 /* Pods-LegoExample-dummy.m */,
-				1B20B15453D16D5B8FCA491E78457CFB /* Pods-LegoExample-frameworks.sh */,
-				E0B708B50BF1C603200619B4CB84B093 /* Pods-LegoExample-resources.sh */,
-				757193151B64C59A59F2BBC4A02BFA6E /* Pods-LegoExample-umbrella.h */,
-				571033B3D2D50D290745B2B18D87FF34 /* Pods-LegoExample.debug.xcconfig */,
-				FD2D9C768330EE756D60CC98C38E7027 /* Pods-LegoExample.release.xcconfig */,
+				67A2CE70323EF07FBC269671002745D5 /* Pods-LegoExample.modulemap */,
+				210FF577F94B1A41C3E90D82524DCD9B /* Pods-LegoExample-acknowledgements.markdown */,
+				4045C7DAFF92F2E29F7CF33C0D03759C /* Pods-LegoExample-acknowledgements.plist */,
+				A2D801FA28A572E490540A63048D84B0 /* Pods-LegoExample-dummy.m */,
+				E004CC2ED1D13F1AD6D5538533A71D16 /* Pods-LegoExample-frameworks.sh */,
+				6E6636C0E79D675FC8471A98BC17AD02 /* Pods-LegoExample-Info.plist */,
+				2B26A39D552DA611909CDD43AAEA392D /* Pods-LegoExample-umbrella.h */,
+				6745FB8120E096BB7CBFAF9F587575C1 /* Pods-LegoExample.debug.xcconfig */,
+				20D1677BE625C611611BA66249C2B282 /* Pods-LegoExample.release.xcconfig */,
 			);
 			name = "Pods-LegoExample";
 			path = "Target Support Files/Pods-LegoExample";
 			sourceTree = "<group>";
 		};
-		A42CACE7DCE251E9C689AE69E9988469 /* Runnable */ = {
+		100DEA8926AC93C0BC85F27B55465E44 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				857F710F40BF6C3FD87272E6AA7ACAB5 /* XFVIPERModuleRunnable.h */,
+				2C50BE91A801663C15C4C044DF19BCBD /* LEDataDriverProtocol.h */,
+				77F66D3CACC2E294814539F234FF053F /* LEViewProtocol.h */,
 			);
-			name = Runnable;
-			path = Runnable;
+			name = Interface;
+			path = Interface;
 			sourceTree = "<group>";
 		};
-		A51F5F1A257E875BA0DAA64358B8C9E9 /* Route */ = {
+		148647004CECE13BA619322B2427B3CE /* PlugInterface */ = {
 			isa = PBXGroup;
 			children = (
-				98CBAF04CF999AC4398766058C0714EA /* URLRoute */,
+				680960033E526C366D4D514650B34A15 /* XFComponentHandlerPlug.h */,
+				20DBCE5EDF4CE169775547D39CA0C900 /* XFComponentRoutable.h */,
+				05DF82AE72DDD7E15B349DE361C93784 /* XFEmitterPlug.h */,
+				FE77E15CEB5ED96D78ACA1DE97C1A033 /* XFEventReceivable.h */,
+				3A04A45EB1D371280FE57F40E119B2BB /* XFURLRoutePlug.h */,
+			);
+			name = PlugInterface;
+			path = PlugInterface;
+			sourceTree = "<group>";
+		};
+		1684A32A22E22F492580C6F1A7F19E1C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				342D764A9780BCEEF635F8A0D2D6DBCD /* XFDataManagerPort.h */,
+				CE7EA3F8FD9A868499B8C73FF436CC45 /* XFEventHandlerPort.h */,
+				0B566D4D5B0938AEECA65221734FE5CF /* XFInteractorPort.h */,
+				4D7915D30EBBA3F09D5F5BE6A38FE987 /* XFUIOperatorPort.h */,
+				1BFB09FBEB0E34D908C7BF22D9453AE3 /* XFUserInterfacePort.h */,
+				EE3E4CE0A8C8DF8B52599222D4E05309 /* XFWireFramePort.h */,
+			);
+			name = Interface;
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		16D0DA63A12EC3CA4C8E185A5E5FE59A /* URLRoute */ = {
+			isa = PBXGroup;
+			children = (
+				A212A3ABF877AD8565B3AB551D2B8E8B /* XFURLParse.h */,
+				EB5E5FEB653D3ADB17679A3447F5736C /* XFURLParse.m */,
+				40E8AA636F9FF3C228A7497AA90B8B6C /* XFURLRoute.h */,
+				3BE062FAF18E569BC1D395EA60F3E92D /* XFURLRoute.m */,
+			);
+			name = URLRoute;
+			path = URLRoute;
+			sourceTree = "<group>";
+		};
+		2197BC642A3DFA751EC5E3564133D134 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				16D0DA63A12EC3CA4C8E185A5E5FE59A /* URLRoute */,
 			);
 			name = Route;
 			path = Route;
 			sourceTree = "<group>";
 		};
-		A5E3E9C5DD87F7791BC332CD5E07C6A5 /* Manager */ = {
+		2390A9FCF6CF1404975D6F29FA82E74A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08B593BFD46AD6A17F9303B8519E363A /* XFComponentManager.h */,
-				4A462A23298864A969E6EDAA793C4A6A /* XFComponentManager.m */,
+				EEADA6F8772CA722118B1D6A3AECEEE5 /* Pods_LegoExample.framework */,
+				74D54CCD9EBFE0F4042CDF462F257F2D /* XFLegoVIPER.framework */,
 			);
-			name = Manager;
-			path = Manager;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		A9E4E005D1B0ED6AD501AC6C65751F34 /* Support Files */ = {
+		2C5510796B41A2C43C428201CD15E93E /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				042E8B3AFF7168C8FF5C6C9553FBFBAF /* Info.plist */,
-				88827BA2B4B1DFA122C83679722CB7B9 /* XFLegoVIPER.modulemap */,
-				F7EA5056FA59DAC2F6E4AA2D5F39DDF5 /* XFLegoVIPER.xcconfig */,
-				B8F956221DFE3EB455C0CC407C68CE36 /* XFLegoVIPER-dummy.m */,
-				4AA63F8E2E338B4FB22A855F81512145 /* XFLegoVIPER-prefix.pch */,
-				591E05B840D8354738C9A30154BE8E0A /* XFLegoVIPER-umbrella.h */,
+				8ADA195EC3C34FC720E281E831C83FB0 /* Controller */,
+				84AD4B8443FE6FFCB0EC5E9A733D8964 /* Handler */,
+				A74CAE57F4052C0C11900763E01087D0 /* Runnable */,
 			);
-			name = "Support Files";
-			path = "LegoExample/Pods/Target Support Files/XFLegoVIPER";
+			name = MVC;
+			path = MVC;
 			sourceTree = "<group>";
 		};
-		AAFCD9BE8C60F482FA93D53D6054DF72 /* Modules */ = {
+		2F3EC480F5F40E13D12A6E47A58F4DDE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				88714597A9B15E1539ECBC6659609EE9 /* MVC */,
-				97D6E77CE0469B02F6635148F767A231 /* MVVM */,
-				82D92C209C82FD063D7EFAAE08665228 /* VIPER */,
+				0C644F8FD37D0AD9A95FC744387199D5 /* Pods-LegoExample */,
 			);
-			name = Modules;
-			path = Modules;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		AC9C884149328402A73892D9E13A1656 /* MVVMModule */ = {
+		38390A2C059C573B1A8ED408D93DDF97 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				92D66DC613C696B03B60822F273E9740 /* Factory */,
-				9ED89DD0732746DD7B55D0CD5E7E79E1 /* Interface */,
-				204854BB659985DD2B1CC275BE582541 /* Layer */,
-				F86EA1B8C649497A251C57DF20CBF413 /* Recognizer */,
+				B01E483585815AE5B1AB36F3CBB89929 /* XFControllerFactory.h */,
+				E20266D1734504EB27CD6BDE4BCB5D23 /* XFControllerFactory.m */,
 			);
-			name = MVVMModule;
-			path = MVVMModule;
+			name = Factory;
+			path = Factory;
 			sourceTree = "<group>";
 		};
-		B011D3AFF401F7982603AC5125DC9801 /* Express */ = {
+		45C2B5A44C462F9C124B780B0B1D75EB /* WorkBus */ = {
 			isa = PBXGroup;
 			children = (
-				5B1504E7EC1C90B8D33A29C98E652408 /* XFExpressPack.h */,
-				F519DE10630DF365C476A62A38A88309 /* XFExpressPack.m */,
-				4FB54DC351FF77C036FEA91B9590D937 /* XFExpressPiece.h */,
-				344F70286119D44E9849A25BAF20630E /* XFExpressPiece.m */,
-				51084385C8FEBF6FCB2B67A88D630A9B /* XFExpressPiecePort.h */,
-				80BF5C6C55AFBCB5C1465981CAFA320D /* XFRenderData.h */,
-				7D47FA76C77EA804CEEDC46DF622E0A2 /* XFRenderData.m */,
-				B626DFA86968618EC3D298B2BD139B63 /* XFRenderItem.h */,
-				B2436822DA71097F34429D649682BE08 /* XFRenderItem.m */,
+				74ADD3D26594005728CA35032E4D0AD6 /* XFEventBus.h */,
+				48C1985FEB78C2C3D0FB72BBA6416169 /* XFEventBus.m */,
+				B50A80CC70E8220F3FF343FC2C6EC21F /* XFUIBus.h */,
+				A9ABC6838D75D7B8C48D51E60B8C0682 /* XFUIBus.m */,
 			);
-			name = Express;
-			path = Express;
+			name = WorkBus;
+			path = WorkBus;
 			sourceTree = "<group>";
 		};
-		B210FF244F799FF43942C2194CBEB0DD /* XFLegoVIPER */ = {
+		4926AFF2EAD8BE8F90D19386ADF47B06 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
-				A9E4E005D1B0ED6AD501AC6C65751F34 /* Support Files */,
-				B8A4AC752826E0DFD2068C4D04A6FA77 /* XFLegoVIPER */,
-			);
-			name = XFLegoVIPER;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		B24E46A213F95B072FBA3CF31EFD671C /* Handler */ = {
-			isa = PBXGroup;
-			children = (
-				F297D83577CD021B08C38D2776D10EB7 /* LEMVVMModuleHandler.h */,
-				22E43AAFFFE0274AF88F6DC099387BF2 /* LEMVVMModuleHandler.m */,
+				17684A28773970E3543EF41C81468D19 /* LEMVVMModuleHandler.h */,
+				19CD2687254FC23463ED35B05594E513 /* LEMVVMModuleHandler.m */,
 			);
 			name = Handler;
 			path = Handler;
 			sourceTree = "<group>";
 		};
-		B8A4AC752826E0DFD2068C4D04A6FA77 /* XFLegoVIPER */ = {
+		4B3DBF7299D8EBDF9D0409014B283D88 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				7BE8A3ED06DB7050CCE228F5208B487D /* XFLegoConfig.h */,
-				7C83B64B4478E0127B34A7FE5EC6F5DD /* XFLegoConfig.m */,
-				689B3BF97A4208836624D259ADE1EEFA /* XFLegoMarco.h */,
-				8EAAF29C3EAF1D132BB92FB88D322925 /* XFLegoVIPER.h */,
-				598A917FA28F1E4B659E0A7B32F41BDB /* Core */,
-				75B733D54BACC86FCAFF2D926AEF3B52 /* Extension */,
-				503D756A7A91BF9FD507459C1C73EA3A /* Util */,
+				2C5510796B41A2C43C428201CD15E93E /* MVC */,
+				CB08436FAA0C076332EC1AB0572A37F4 /* MVVM */,
+				0BF0B04C63F7BBC8174300641221BD9E /* VIPER */,
+			);
+			name = Modules;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4FC9076C461EA1EE4D106155692E6D8C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				865E664CB5D639137301EFB7433D9A4A /* XFRoutingLinkManager.h */,
+				335F31FFB3AD70B8D4B20FE789C985A0 /* XFRoutingLinkManager.m */,
+				D1E33794B156621AF94E29A55E129D3F /* XFVIPERModuleAssembly.h */,
+				71A264679DD4AF2065123E7F0DAC013F /* XFVIPERModuleAssembly.m */,
+			);
+			name = Manager;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		541DC21466DC5ED3A7381A51F20C1CE4 /* VIPERModule */ = {
+			isa = PBXGroup;
+			children = (
+				AA136F91B5CE55AE4A62C782314A8EB9 /* Factory */,
+				1684A32A22E22F492580C6F1A7F19E1C /* Interface */,
+				8F7424A03CB0EB62D191563958831739 /* Layer */,
+				4FC9076C461EA1EE4D106155692E6D8C /* Manager */,
+				924871168E16EF6AE991770CBC0CE344 /* Recognizer */,
+			);
+			name = VIPERModule;
+			path = VIPERModule;
+			sourceTree = "<group>";
+		};
+		584C05ED50EF5C6B8E1E6AC04346F98E /* MVVMModule */ = {
+			isa = PBXGroup;
+			children = (
+				D09D733A3E25C5CB176359262E11690F /* Factory */,
+				100DEA8926AC93C0BC85F27B55465E44 /* Interface */,
+				E1CA5B5250370BB4B08F33543F3F215D /* Layer */,
+				0271514DE7A84758213E2848FB7B4683 /* Recognizer */,
+			);
+			name = MVVMModule;
+			path = MVVMModule;
+			sourceTree = "<group>";
+		};
+		5B5B5203690B8641043E1CE91A012EF0 /* Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				FA7C91E736116892E3005FEA75708A10 /* XFComponentHandlerMatcher.h */,
+				87EBC218F0514C63481BE1F08D9EAC23 /* XFComponentHandlerMatcher.m */,
+				14DC1C86CAAE50AF0C4D07E3F47A4BAD /* XFComponentReflect.h */,
+				C024FEECD3CE322A89E1B88662C979DA /* XFComponentReflect.m */,
+			);
+			name = Recognizer;
+			path = Recognizer;
+			sourceTree = "<group>";
+		};
+		5CA9F9D3E6E9B36FE9A42D886426054E /* Express */ = {
+			isa = PBXGroup;
+			children = (
+				3187F81FE449B58D0FD6C80CA28B8BB5 /* XFExpressDirver.h */,
+				675E2DDE3744C9C2D855CEDEFE8911DF /* XFExpressDirver.m */,
+				D503038ADD94381401BFA4B1164BDC5E /* XFExpressPack.h */,
+				E3AC3DF87E6AF6BDB7C9601793F8CC55 /* XFExpressPack.m */,
+				CF470172B6A8043690A3F6ADD624F15F /* XFExpressPiece.h */,
+				96B562893EEAAD7F391EC8F144D553FD /* XFExpressPiece.m */,
+				F4D66B29D2340DE9BAB40472957C4765 /* XFExpressPiecePort.h */,
+				F7E815EEE7B20A826DFB90A1220D16BF /* XFRenderData.h */,
+				9D69434D2E36A40E2EA20367DC427FB3 /* XFRenderData.m */,
+				2A5B02E94B51856621AAAF0AEB6F7B86 /* XFRenderItem.h */,
+				9CE5337398F4959945E51BA651501D61 /* XFRenderItem.m */,
+			);
+			name = Express;
+			path = Express;
+			sourceTree = "<group>";
+		};
+		5E1596AAF8471BB9D1F085574F63B099 /* Emitter */ = {
+			isa = PBXGroup;
+			children = (
+				8F899E52FF92A93A8ADB9E86D9F203B4 /* XFApplicationEmitter.h */,
+				4C6DDEC0F0FADF4BB6F4DCDBD3DF48A9 /* XFApplicationEmitter.m */,
+			);
+			name = Emitter;
+			path = Emitter;
+			sourceTree = "<group>";
+		};
+		647B6C1FDAC825AB1466F0403C45D4E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E3977AF77699FAD2BA5DA651665C0FC /* XFLegoVIPER.modulemap */,
+				9DC31262603380AECCBBE3BD2450535D /* XFLegoVIPER-dummy.m */,
+				587498266131674A86F5ABCC46D8F824 /* XFLegoVIPER-Info.plist */,
+				3BB5281E6D677B883D529BEAB15A4C1A /* XFLegoVIPER-prefix.pch */,
+				AC8A6B841C4E827D56BF869E2DE0A5DD /* XFLegoVIPER-umbrella.h */,
+				F33932F0110DFD4E525224EC4919B713 /* XFLegoVIPER.debug.xcconfig */,
+				52A56A206A03DD0C987E9EAF497748BE /* XFLegoVIPER.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "LegoExample/Pods/Target Support Files/XFLegoVIPER";
+			sourceTree = "<group>";
+		};
+		80DBE5DF7A0BD8FEF95FC64FC2ECED8F /* XFLegoVIPER */ = {
+			isa = PBXGroup;
+			children = (
+				F1B2CB0069EBF3089CDE12DF80DA69A7 /* XFLegoConfig.h */,
+				126B0ADE1F8312FF3BB6E7D0A8A3226B /* XFLegoConfig.m */,
+				0276CD59436D68BEC8934C4B293AE74B /* XFLegoMarco.h */,
+				4D80062A1FA2045697E7DAD33B5CB594 /* XFLegoVIPER.h */,
+				CF389B937165DE9EA791B4A59618D577 /* Core */,
+				DB0667552FA3D9A42942DCF99F6FA044 /* Extension */,
+				B0AF1E29981E757B6812B4827C061674 /* Pod */,
+				647B6C1FDAC825AB1466F0403C45D4E3 /* Support Files */,
+				D8ADC4FD35168DF882AB9B27463D59B5 /* Util */,
 			);
 			name = XFLegoVIPER;
-			path = XFLegoVIPER;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		84AD4B8443FE6FFCB0EC5E9A733D8964 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				98E9D6328F864C4B5A9C602ABB2C122A /* XFControllerHandler.h */,
+				F49B044E61A2A5F7D618F4FF3AABFF9F /* XFControllerHandler.m */,
 			);
-			name = Frameworks;
+			name = Handler;
+			path = Handler;
 			sourceTree = "<group>";
 		};
-		CE41EC931B4A76204F99446CE8B048E0 /* Layer */ = {
+		86E0E6333C014DC72EFED4337E0B2E04 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
-				A93CEEF52449BF48713355EC086FF1CA /* UIView+XFLego.h */,
-				22B133CE81B8E347E369C1BBD4B5DB88 /* UIView+XFLego.m */,
-				E941FB7A49EFD393AED0297DB2EAF8FE /* UIViewController+XFLego.h */,
-				DCCB76F872E28946738E0A893930524F /* UIViewController+XFLego.m */,
-				C47F522177168635C09142F3AC2D7904 /* XFActivity.h */,
-				585578E1BB4AA79145BB20365104D9F7 /* XFActivity.m */,
-				64E8981277CCEA1991C0B61C962B114F /* XFDataManager.h */,
-				76B4CEBD73D269BEEFA3BDFC5ED534F0 /* XFDataManager.m */,
-				B7A6029D0B5808AA18EE7A2BD114291D /* XFInteractor.h */,
-				B27F5EA8BC09D80E550976683BFFC0AB /* XFInteractor.m */,
-				C3C37502170DBEEE52872264C91FBBB1 /* XFPresenter.h */,
-				F95035776FC03AD9A7CC344848DF8207 /* XFPresenter.m */,
-				7713CA5C0793804004723431A37EF1B2 /* XFRouting.h */,
-				5B3EF6CBD50251908FBE3E4385944A62 /* XFRouting.m */,
+				1D249D72C1A9C6AAF80272B12C6E1456 /* UIViewController+ComponentBridge.h */,
+				D9DB9BEA9682FA6C286E94B538A3B3E7 /* UIViewController+ComponentBridge.m */,
+				41A41B52CBD9509E1E56CCE7E0A1D886 /* XFComponentViewController.h */,
+				8015322191842FF0AA53A258FA358231 /* XFComponentViewController.m */,
 			);
 			name = Layer;
 			path = Layer;
 			sourceTree = "<group>";
 		};
-		F462E000DA8B6EA6482CA6A3C1A40FCB /* Controller */ = {
+		8ADA195EC3C34FC720E281E831C83FB0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4C42559A9DF2953D10C2F72C92922415 /* Factory */,
-				81AEBA4B7C38C39F070400B060E73429 /* Layer */,
-				1F3A38E8F66D18D23C2B275ADC6221E6 /* Recognizer */,
+				38390A2C059C573B1A8ED408D93DDF97 /* Factory */,
+				86E0E6333C014DC72EFED4337E0B2E04 /* Layer */,
+				BC0E28BE0FA53F05CA490F3215521783 /* Recognizer */,
 			);
 			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		F6825EFA7F834713AD535754A2715074 /* Recognizer */ = {
+		8F7424A03CB0EB62D191563958831739 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
-				82B74E07F7002C3F0E70D33135A85E9A /* XFComponentHandlerMatcher.h */,
-				6FBDF7F5B5CDAB66583A664103D6AA9D /* XFComponentHandlerMatcher.m */,
-				05652AC3BAF6B2177AACC413524E324C /* XFComponentReflect.h */,
-				DF39E042B9F8C88F31383B7813394E7B /* XFComponentReflect.m */,
+				47E19AFC38023DD463EE5EEFCE710E21 /* UIView+XFLego.h */,
+				52ABC2D421561E26EE80A59F5A0F6BE4 /* UIView+XFLego.m */,
+				07565EB4BCE24AD0F7D4C65732328178 /* UIViewController+XFLego.h */,
+				752488C6FA18F141399153FC47B0FCED /* UIViewController+XFLego.m */,
+				72D33113C1CDCAC580E308272BCD3AB6 /* XFActivity.h */,
+				51EBFB00BE2DDF320462B2BC85C2EB46 /* XFActivity.m */,
+				7E0944853F9AB878987F0A580DC450DD /* XFDataManager.h */,
+				2CF8756D12CAD5B86B95C7B02CCFC22D /* XFDataManager.m */,
+				2A12DB35D876F99BF7536C7FE560A71D /* XFInteractor.h */,
+				543156C1E6E23B67F1F12D5A72C1D1BC /* XFInteractor.m */,
+				29D17532DD6C1D601E0D09E9D06BB964 /* XFPresenter.h */,
+				9603AD6125EFC776C0CFE0DB6B7E2B51 /* XFPresenter.m */,
+				1BAA9D7D46C2FCF94B3E28D1F367C842 /* XFRouting.h */,
+				0686A49EC4E8458C819AC275017D11F8 /* XFRouting.m */,
+			);
+			name = Layer;
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		924871168E16EF6AE991770CBC0CE344 /* Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				DACA1837E37AE4299848B43C81ABD0E0 /* XFVIPERModuleReflect.h */,
+				1512FB516E9E3552BAAB730A07C0376C /* XFVIPERModuleReflect.m */,
 			);
 			name = Recognizer;
 			path = Recognizer;
 			sourceTree = "<group>";
 		};
-		F86EA1B8C649497A251C57DF20CBF413 /* Recognizer */ = {
+		9E73B5C42E9DC7443A63FEF4A70BC784 /* Runnable */ = {
 			isa = PBXGroup;
 			children = (
-				9E3B0A2666C061B487DE61FFBF81628F /* LEMVVMModuleReflect.h */,
-				62593F274118E36742DA73015FD0CAB0 /* LEMVVMModuleReflect.m */,
+				7BA8700C3AAC347577BAF2E27AD1AAD5 /* XFVIPERModuleRunnable.h */,
+			);
+			name = Runnable;
+			path = Runnable;
+			sourceTree = "<group>";
+		};
+		A74CAE57F4052C0C11900763E01087D0 /* Runnable */ = {
+			isa = PBXGroup;
+			children = (
+				1CB938A2DDEA131D6F61EBE14A338C20 /* XFControllerRunnable.h */,
+			);
+			name = Runnable;
+			path = Runnable;
+			sourceTree = "<group>";
+		};
+		AA136F91B5CE55AE4A62C782314A8EB9 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				89D3187FDC34DAA77B8CF39A88F2E929 /* XFRoutingFactory.h */,
+				142FA0281F6049EEB6EAF4585BF607F7 /* XFRoutingFactory.m */,
+			);
+			name = Factory;
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		ADAC7AF456798357CA05C67086B773D1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80DBE5DF7A0BD8FEF95FC64FC2ECED8F /* XFLegoVIPER */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B0AF1E29981E757B6812B4827C061674 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AADBB9CA40B7C5EFC8EAD61746B32EB0 /* LICENSE */,
+				18313E1C96934CE3C01290B31FBE6BA2 /* README.md */,
+				4104B9F0D01D1C9F8ACDDA704EFBEE1E /* XFLegoVIPER.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BC0E28BE0FA53F05CA490F3215521783 /* Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				B2E9C9B82B2AB0003F996C358113351C /* XFControllerReflect.h */,
+				5104455E6265C11523D74F537C4B4E62 /* XFControllerReflect.m */,
 			);
 			name = Recognizer;
 			path = Recognizer;
 			sourceTree = "<group>";
 		};
-		FCC029ED9C605B5456C8C069112B1E2B /* Recognizer */ = {
+		BE332E370F51BC2D430DBDD5856C30CB /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				8752CBEB47B78B77F10F4A689439D4A9 /* XFVIPERModuleReflect.h */,
-				49BC2AE2D0DDEB045F8AA1EBD579EA25 /* XFVIPERModuleReflect.m */,
+				5CA9F9D3E6E9B36FE9A42D886426054E /* Express */,
+				031D2FE07C4C253EB62988018403D172 /* Factory */,
+				0A40B9D5B7C9128BA310B69D3BCEE72F /* Interceptor */,
+				EC044B45EA05C8A054FE775D5D8C2E73 /* Manager */,
+				5B5B5203690B8641043E1CE91A012EF0 /* Recognizer */,
+				45C2B5A44C462F9C124B780B0B1D75EB /* WorkBus */,
+			);
+			name = Component;
+			path = Component;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CB08436FAA0C076332EC1AB0572A37F4 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E2A09A62D164662C41A32986EC339FFF /* Extra */,
+				4926AFF2EAD8BE8F90D19386ADF47B06 /* Handler */,
+				584C05ED50EF5C6B8E1E6AC04346F98E /* MVVMModule */,
+			);
+			name = MVVM;
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				ADAC7AF456798357CA05C67086B773D1 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2390A9FCF6CF1404975D6F29FA82E74A /* Products */,
+				2F3EC480F5F40E13D12A6E47A58F4DDE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF389B937165DE9EA791B4A59618D577 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BE332E370F51BC2D430DBDD5856C30CB /* Component */,
+				D4BA0CB596FEA4D326360202C8AF8466 /* LEGOAbsModule */,
+				148647004CECE13BA619322B2427B3CE /* PlugInterface */,
+			);
+			name = Core;
+			path = XFLegoVIPER/Core;
+			sourceTree = "<group>";
+		};
+		D09D733A3E25C5CB176359262E11690F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				FA738AA77C2534B74C3A76809A501745 /* LEMVVMModuleFactory.h */,
+				76FB3E13303237F240DC3EB7595F1702 /* LEMVVMModuleFactory.m */,
+			);
+			name = Factory;
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4BA0CB596FEA4D326360202C8AF8466 /* LEGOAbsModule */ = {
+			isa = PBXGroup;
+			children = (
+				01F749DC86EA4846A5D88917D7DCF93E /* Interface */,
+				024A687DA93F452BAC31EA7BCEC19993 /* Layer */,
+				EB5942EDE481D0B4482D04095087EF0A /* Recognizer */,
+			);
+			name = LEGOAbsModule;
+			path = LEGOAbsModule;
+			sourceTree = "<group>";
+		};
+		D8ADC4FD35168DF882AB9B27463D59B5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4B348596F1574DF2E38DBBB5651F1686 /* NSObject+XFLegoCopy.h */,
+				04152C91A30E312A61C96B5E91A69B5A /* NSObject+XFLegoCopy.m */,
+				BE5B7B546EBDD4AB733A95371B380DBA /* NSObject+XFLegoInvokeMethod.h */,
+				D392E7D820CB73C6D05E48E6DDC39747 /* NSObject+XFLegoInvokeMethod.m */,
+				AD190E0B38E6A2A1C44C71073AEF8A75 /* NSObject+XFLegoSwizzle.h */,
+				DD96FBFB28396F1609378E2FA60E06EF /* NSObject+XFLegoSwizzle.m */,
+			);
+			name = Util;
+			path = XFLegoVIPER/Util;
+			sourceTree = "<group>";
+		};
+		DB0667552FA3D9A42942DCF99F6FA044 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5E1596AAF8471BB9D1F085574F63B099 /* Emitter */,
+				4B3DBF7299D8EBDF9D0409014B283D88 /* Modules */,
+				2197BC642A3DFA751EC5E3564133D134 /* Route */,
+			);
+			name = Extension;
+			path = XFLegoVIPER/Extension;
+			sourceTree = "<group>";
+		};
+		E1CA5B5250370BB4B08F33543F3F215D /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				493458E563D87E6D701CDEAC0A358469 /* LEViewController.h */,
+				692C78FE5E9E5EDAA2D2673E807F44A7 /* LEViewController.m */,
+				80C5B687AF0BC7374DD85F961F4D4DA2 /* LEViewModel.h */,
+				BDF3D33ED28BC8A1746635550D7B8640 /* LEViewModel.m */,
+				5AD7CAD0DEA7D46DC9696ECE5C22BBCD /* UIViewController+LEView.h */,
+				E990AE2772670383E31B8DE89290A3C3 /* UIViewController+LEView.m */,
+			);
+			name = Layer;
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		E2A09A62D164662C41A32986EC339FFF /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA24B52360BF45713CCB287BC0E96C /* LEMVVMConnector.h */,
+				7DF8119E9E92AA2A7D58EED3ED1280B6 /* LEMVVMConnector.m */,
+				5EB15723E03154BB6754A16943E84D64 /* LEMVVMIntent.h */,
+				78A340B7DE6651B03588247A4A2B6B43 /* LEMVVMNavigationController.h */,
+				C898C337E60C4D960B1AD150D5563B05 /* LEMVVMNavigationController.m */,
+			);
+			name = Extra;
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		EB5942EDE481D0B4482D04095087EF0A /* Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				645D035BBC90E802B6EF1A33E063DB1B /* XFModuleReflect.h */,
+				E0C5C39BDC0861F686526EE2ABF132AD /* XFModuleReflect.m */,
 			);
 			name = Recognizer;
 			path = Recognizer;
+			sourceTree = "<group>";
+		};
+		EC044B45EA05C8A054FE775D5D8C2E73 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				440395AC28756329D89827CE9EF5DFEE /* NSObject+XFPipe.h */,
+				3DD62F1C662E86E6222D4FB9D708ED52 /* NSObject+XFPipe.m */,
+				578A4578DFF2FD505A331BDCAB1410BF /* XFComponentManager.h */,
+				0E1AC60A1AB319E688C3444EA53E130F /* XFComponentManager.m */,
+				D2C747FC45C3D4F2E800DF702430F457 /* XFPipe.h */,
+				349EFE69CD659B736E1C22B6FE1AE9EE /* XFPipe.m */,
+				7B012C8F094052314227CE23E0F8203C /* XFPipePort.h */,
+			);
+			name = Manager;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F524D03286C10D0BA50B1CD2F0DB21A4 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				109BAE93745DE8C87D571288F19D15CD /* XFVIPERModuleHandler.h */,
+				0AFD4E1A35A75ABE46009829EAFD9A42 /* XFVIPERModuleHandler.m */,
+			);
+			name = Handler;
+			path = Handler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		85571161CCB17FAC5AFB17F2389237DE /* Headers */ = {
+		42A3BF6972AE99B1D598334694CE5E32 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558BEBF08C457942AEB2A8DDA344E95D /* Pods-LegoExample-umbrella.h in Headers */,
+				E540FDEDE6EA0A94D5AD418B11240821 /* LEDataDriverProtocol.h in Headers */,
+				3E0D6D36213F918829B012EC2EF65ADD /* LEMVVMConnector.h in Headers */,
+				267918C262B4A30AE68824ECC67B76A4 /* LEMVVMIntent.h in Headers */,
+				EC62DE64D2CE3E794D50C3BD70AB8EC0 /* LEMVVMModuleFactory.h in Headers */,
+				98676AF5B18DF9B2B767A4C42E6331E7 /* LEMVVMModuleHandler.h in Headers */,
+				CA93C61FE89BB9BA7A3F64E6887332A0 /* LEMVVMModuleReflect.h in Headers */,
+				616771D3CA50D2E77B39E1B940F80195 /* LEMVVMNavigationController.h in Headers */,
+				8DC33A3F124ECDACFBD9E460BEF559F6 /* LEViewController.h in Headers */,
+				ADEA0EE37A3E84A35CDCBC8306DDAD63 /* LEViewModel.h in Headers */,
+				895082AA906981455F8D9AD5D7FFFB30 /* LEViewProtocol.h in Headers */,
+				561823592C853660D277561C9E41B1B0 /* NSObject+XFLegoCopy.h in Headers */,
+				B260AEB90E0F6D1C8F78239EFB19FFFD /* NSObject+XFLegoInvokeMethod.h in Headers */,
+				FC125DF8B8B1E96F8DE659654C529F24 /* NSObject+XFLegoSwizzle.h in Headers */,
+				3993091FAB3DD155E17A89BDDFDAC765 /* NSObject+XFPipe.h in Headers */,
+				F84A2C56791184619369E8B1C89C8DA8 /* UIView+ComponentSubView.h in Headers */,
+				059A834E3364782D1FA85A36E78403B2 /* UIView+XFLego.h in Headers */,
+				D5AECBB228901C515B9E46CD4489B420 /* UIViewController+ComponentBridge.h in Headers */,
+				B990BED7B16449996249B383099AEDE1 /* UIViewController+ComponentUI.h in Headers */,
+				B95096B526283D984321B34639FB713F /* UIViewController+LEView.h in Headers */,
+				FD50443CC4A7BCCA97E623EB97EBF3A9 /* UIViewController+XFLego.h in Headers */,
+				88F1E0FC141692D78EE7BD154679DAB2 /* XFActivity.h in Headers */,
+				A82F6CEC2D528231A17A7F8EF6F17F0D /* XFApplicationEmitter.h in Headers */,
+				83F6A6BAFB1AF92A35252D475F8B7258 /* XFComponentBindEvent.h in Headers */,
+				2BA7FB2F475AF5A23FB589D3D891BB3B /* XFComponentEventResponder.h in Headers */,
+				1BBD180A8933EC3A808AAE6F51351770 /* XFComponentHandlerMatcher.h in Headers */,
+				D7C22D3C0B483DC825CC4B6C10D553B2 /* XFComponentHandlerPlug.h in Headers */,
+				CD7096C486FC7F6D274F412C39B371B4 /* XFComponentManager.h in Headers */,
+				D852D51086CD18A8C8BF9821227B06D3 /* XFComponentReflect.h in Headers */,
+				A299559A1724B192F17C7305AE84687D /* XFComponentRoutable.h in Headers */,
+				7CF8C75F2C892A357970B85E25E76A21 /* XFComponentUI.h in Headers */,
+				D044020D42EC2A0B506A06221EDD8C05 /* XFComponentViewController.h in Headers */,
+				A0404E4EEB2423776A2E03FF0BE303B7 /* XFControllerFactory.h in Headers */,
+				573A707ADB43B428512532E5F369F19F /* XFControllerHandler.h in Headers */,
+				F026DA488A460257FF1779F404EFA85C /* XFControllerReflect.h in Headers */,
+				D4DAEB2EF4E5D237E77E947BAE7A374F /* XFControllerRunnable.h in Headers */,
+				1056F079D3685A65884F3F90791E8177 /* XFDataManager.h in Headers */,
+				998D926B99F2B56DD11EBEF17C8F8B16 /* XFDataManagerPort.h in Headers */,
+				DFE0EDB0D2531B09E5FDB6DB04B69475 /* XFEmitterPlug.h in Headers */,
+				57FF4B67F823014ADE073CE3D8F924F1 /* XFEventBus.h in Headers */,
+				A4C6D90566150246F347DDCF4C1C5EB1 /* XFEventHandlerPort.h in Headers */,
+				F615F8C50F7FB4B15EDD572470C70B45 /* XFEventReceivable.h in Headers */,
+				173F17847158411DDA695D90C6C1A9E4 /* XFExpressDirver.h in Headers */,
+				B10C899D3AC47D5F5288293D90C87BBD /* XFExpressPack.h in Headers */,
+				77EC23E4C8F8165C1A85FC142525264C /* XFExpressPiece.h in Headers */,
+				DD6E97B978668A111C4D0EB5A019F028 /* XFExpressPiecePort.h in Headers */,
+				856DF00CD46F7AB3968F6C099B86DD97 /* XFInteractor.h in Headers */,
+				13B3454505ECA20921B1F2D0F6EDAF41 /* XFInteractorPort.h in Headers */,
+				147A66A319BBC697C3000E39E82D1A29 /* XFLegoConfig.h in Headers */,
+				08955B7462CD287396EE6A36307C8F4A /* XFLegoMarco.h in Headers */,
+				DAA9E44C03E4684804679CA6DF2667CA /* XFLegoVIPER-umbrella.h in Headers */,
+				111B35A25632553FA238291D99DE8CAA /* XFLegoVIPER.h in Headers */,
+				BE0B547A0D245A97264FED36864F9C42 /* XFModuleReflect.h in Headers */,
+				E46575B1AE97E55A82CC9EB1AA7CB24A /* XFPipe.h in Headers */,
+				283C1340F70ED19D5585301C39FC5B02 /* XFPipePort.h in Headers */,
+				66A26FFD6B884CBE9B5601CA373E8DD0 /* XFPresenter.h in Headers */,
+				A68060690938C53571A7392DCD1A1B01 /* XFRenderData.h in Headers */,
+				3323734F3A7B3605A221CCCBCB68462F /* XFRenderItem.h in Headers */,
+				71CC6BD95CAFE5E1F05E1189AB3D90D3 /* XFRouting.h in Headers */,
+				BF15C1A99D16E881D36BBF9781A84F16 /* XFRoutingFactory.h in Headers */,
+				6B680B584981896519F8138CAA24479A /* XFRoutingLinkManager.h in Headers */,
+				6CF2B3456D8F01BCBE7D90C7841C04CA /* XFUIBus.h in Headers */,
+				6DC5580FEE015D5EBE6D5E35BE043622 /* XFUInterfaceFactory.h in Headers */,
+				175C1752DEDCF361E27D01FF14995396 /* XFUIOperatorPort.h in Headers */,
+				3A6AE48B3823F07DE735F1F68084FC60 /* XFURLInterceptor.h in Headers */,
+				3E52C30F9B320D9BB0C95ABDE6224378 /* XFURLInterceptorChain.h in Headers */,
+				5F115DB7CEFDF4988F50250D162B260A /* XFURLParse.h in Headers */,
+				C2949D6ED1954E852D29A5C5A6B6F79A /* XFURLRoute.h in Headers */,
+				A6FF7E720224BCFA23B52118DC42A506 /* XFURLRoutePlug.h in Headers */,
+				5D1EF1292E835E072487E2171654767A /* XFUserInterfacePort.h in Headers */,
+				CF10A17136FDF45540CC6DD7BA4DB30C /* XFVIPERModuleAssembly.h in Headers */,
+				5B9418099C30B287860DBB0EC56E00CF /* XFVIPERModuleHandler.h in Headers */,
+				115594A9BA3A27AA37DA7633DBBC61F0 /* XFVIPERModuleReflect.h in Headers */,
+				F3A6DC37DD7C2C5461030740DD2DD0A9 /* XFVIPERModuleRunnable.h in Headers */,
+				809507D0BDA3DA74B3D8F3D2ED89280E /* XFWireFramePort.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECF8810CE90BFD32AB6145300DF386CD /* Headers */ = {
+		7E8F47C913BEC8507A9F915FEC2688C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99FD9AF9955D7B76908D3CF6AE4CA202 /* LEDataDriverProtocol.h in Headers */,
-				F97B9A0416D528FEE667FBE6E1787BB9 /* LEMVVMConnector.h in Headers */,
-				249FAC25EDE5FDBB9CC10ADCBEAC0B5E /* LEMVVMModuleFactory.h in Headers */,
-				3D5A083E8E751FC05021DE22C2A4546E /* LEMVVMModuleHandler.h in Headers */,
-				FB8D8667D5DA315A1EF8838654586383 /* LEMVVMModuleReflect.h in Headers */,
-				0BADF8264C2494E463082391CE70B763 /* LEMVVMNavigationController.h in Headers */,
-				03A4B80DF531EE11E93E86E50810CB04 /* LEViewController.h in Headers */,
-				0BFD11AF7DA04676717C9B07BA71E3B2 /* LEViewModel.h in Headers */,
-				2E47928556AC10055EAA411B7F9AF365 /* LEViewProtocol.h in Headers */,
-				304ACEC43B7CC63DC2DEDA2A401B89EE /* NSObject+XFLegoCopy.h in Headers */,
-				E4C651BE6399EA1CD960A92CDB7C7AD6 /* NSObject+XFLegoInvokeMethod.h in Headers */,
-				35F808AD12F3BB783126AE26D001E8EE /* NSObject+XFLegoSwizzle.h in Headers */,
-				FCEEB86306C57CFE283C0799B6267560 /* UIView+ComponentSubView.h in Headers */,
-				CF409754F0BCA4B5A946E2BE644ECB0C /* UIView+XFLego.h in Headers */,
-				3C73CAF0DC6CC7424F923D0E23393A55 /* UIViewController+ComponentBridge.h in Headers */,
-				33AD0B4E5E733124FF1D77D0ABA7B9FC /* UIViewController+ComponentUI.h in Headers */,
-				C6DE000895E04C708EFDCB0759AB4DD8 /* UIViewController+LEView.h in Headers */,
-				E3F041660EE186437CD1502370FBD5C8 /* UIViewController+XFLego.h in Headers */,
-				06389C5ECDFEB821E76B8176B9494571 /* XFActivity.h in Headers */,
-				B476FA4FF2FACDA40C38420BA9E58334 /* XFComponentBindEvent.h in Headers */,
-				21B6859A60506542A915EE0393BC4CBB /* XFComponentHandlerMatcher.h in Headers */,
-				9A2A9D73F3D8B41A2045A714099B939A /* XFComponentHandlerPlug.h in Headers */,
-				B4B694DB9A022515670929561981E488 /* XFComponentManager.h in Headers */,
-				6FA42205E6C3FE73E3BEB3E7DCD568C7 /* XFComponentReflect.h in Headers */,
-				F850D1FD44294321443ADABE68BBD846 /* XFComponentRoutable.h in Headers */,
-				A388856794DD438564F97BB8C9EA98B5 /* XFComponentUI.h in Headers */,
-				129FE8F0DD10BE979DB8B705854045B7 /* XFComponentUIEvent.h in Headers */,
-				6FED33BA71C575FEB4D47D2104C3D073 /* XFComponentViewController.h in Headers */,
-				6771C7D5F594D716342697D0FF47DA76 /* XFControllerFactory.h in Headers */,
-				7DFFDA7252E969CC5515F7020C335714 /* XFControllerHandler.h in Headers */,
-				ED4421D495AE3C3A2AB9407D379EC2A2 /* XFControllerReflect.h in Headers */,
-				ED969C0E0781C867E83141D16E437948 /* XFControllerRunnable.h in Headers */,
-				F3E61C28C714F394597983B564B2EC9D /* XFDataManager.h in Headers */,
-				D1BE6EF63C7FF6A6EB193499E5A273D4 /* XFDataManagerPort.h in Headers */,
-				73B83EEA25F107CD95A2A7FEEC2B6F8F /* XFEventBus.h in Headers */,
-				54932452EE2D4FC3087A6C1EBFF51AD0 /* XFEventHandlerPort.h in Headers */,
-				C310059B97E528BDEA18CA0185EC973F /* XFExpressPack.h in Headers */,
-				4310B6D78036F1B45B25AB0825EA46D5 /* XFExpressPiece.h in Headers */,
-				9E360B7FFB41FD0EC96BB258F2681EDE /* XFExpressPiecePort.h in Headers */,
-				11AF59AF9F32BA7E686344E97FF03CB3 /* XFInteractor.h in Headers */,
-				DEEEE771308FDE2CAAF4D02072559A0F /* XFInteractorPort.h in Headers */,
-				D81299E638658CEFD4F2F7847F2F4471 /* XFLegoConfig.h in Headers */,
-				61E2E734DF2866C46BEA92A3E35E4B05 /* XFLegoMarco.h in Headers */,
-				A0BD81A1A2F75AAD17BC694C25D103CC /* XFLegoVIPER-umbrella.h in Headers */,
-				419951FDFAFC2FCE23FB826052EB1F4D /* XFLegoVIPER.h in Headers */,
-				18799F6F4650C6E0546B6DD4F267C180 /* XFModuleReflect.h in Headers */,
-				DCF235916988C1019572DF72F2E170B0 /* XFPresenter.h in Headers */,
-				30249F5E1B59C38E204A17FE0A752AFB /* XFRenderData.h in Headers */,
-				B09A937F00DC79B3F58D1C98BD9723EE /* XFRenderItem.h in Headers */,
-				FA0AB5E01F722223C357D86C51526A07 /* XFRouting.h in Headers */,
-				0A5C974BA09A848772DB8B1047192FED /* XFRoutingFactory.h in Headers */,
-				3C6B623F027F91780AF3F2D110AE36DB /* XFRoutingLinkManager.h in Headers */,
-				8D66AC872B5736C104390C72020E5061 /* XFUIBus.h in Headers */,
-				C2CB352C365513B28210C1F692BE3C28 /* XFUInterfaceFactory.h in Headers */,
-				943DAE396661E4070C6AC7D5382BCC8C /* XFUIOperatorPort.h in Headers */,
-				1AD03D89D84E6A0CFCBF79D080ED45D4 /* XFURLParse.h in Headers */,
-				E4D68E3FB8B46DC36D3DA085D765A8A5 /* XFURLRoute.h in Headers */,
-				748BB446C93C65A31A3AA719D94FDBF6 /* XFURLRoutePlug.h in Headers */,
-				0B2944705D279AAAFB188BC064CAD868 /* XFUserInterfacePort.h in Headers */,
-				1F85EAA15932E89C477818C661A61FD6 /* XFVIPERModuleAssembly.h in Headers */,
-				CABDD6F27C2D019F65BE3BE964194343 /* XFVIPERModuleHandler.h in Headers */,
-				097B1D69A30865F3EBB3F8CD33B983C2 /* XFVIPERModuleReflect.h in Headers */,
-				2C779344D2ECD45371AADDB82BF4AC06 /* XFVIPERModuleRunnable.h in Headers */,
-				90D53F0ACDE17B9119731E9DCBFB4FA4 /* XFWireFramePort.h in Headers */,
+				B6097FAB33634FE8E9DEE7674D234163 /* Pods-LegoExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9D7A8C7AADA2FBE5985F699010B7823E /* XFLegoVIPER */ = {
+		380F45E7462AB3AE15C33A78CA711262 /* Pods-LegoExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC446633772E43073215D87ED58A3DC6 /* Build configuration list for PBXNativeTarget "XFLegoVIPER" */;
+			buildConfigurationList = E803988788B537B1F25F6653C21F5216 /* Build configuration list for PBXNativeTarget "Pods-LegoExample" */;
 			buildPhases = (
-				55BFF7EB3C34CCD81F7AD75B67D3F85C /* Sources */,
-				B056E464960C759A1E31B7679481F1A3 /* Frameworks */,
-				ECF8810CE90BFD32AB6145300DF386CD /* Headers */,
+				7E8F47C913BEC8507A9F915FEC2688C6 /* Headers */,
+				8F3F13EF2BC9FCB3D92E81369677ED9F /* Sources */,
+				002DC69583DC7F799B2BBD9911AB5A22 /* Frameworks */,
+				3DFE69B2116CA9B9E28C12C4FE475375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16510F358AB23B349251A794DCE8058A /* PBXTargetDependency */,
+			);
+			name = "Pods-LegoExample";
+			productName = "Pods-LegoExample";
+			productReference = EEADA6F8772CA722118B1D6A3AECEEE5 /* Pods_LegoExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC2626344F822E299421946F0AD8DD20 /* XFLegoVIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED41405227F2574F2687B505DCC5F17 /* Build configuration list for PBXNativeTarget "XFLegoVIPER" */;
+			buildPhases = (
+				42A3BF6972AE99B1D598334694CE5E32 /* Headers */,
+				AA67AD0865876FC424800F3A8304F856 /* Sources */,
+				7E3C0BB288A62B7124A9C4F13061E68F /* Frameworks */,
+				CE25DD0A4DFA6CB1F59E4D79866B0342 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -959,270 +1060,395 @@
 			);
 			name = XFLegoVIPER;
 			productName = XFLegoVIPER;
-			productReference = 1147F64B1EACA854F84BCAD02E3D1179 /* XFLegoVIPER.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D71245B4B1F26A9DB98EC5FA8BB1D167 /* Pods-LegoExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A95E3F1D36BFC1EDE8851E859BFCEAA3 /* Build configuration list for PBXNativeTarget "Pods-LegoExample" */;
-			buildPhases = (
-				C384513AD282DADAF84DAE7990E8D7DC /* Sources */,
-				06500C308FE4122FD19DD0D3B74DC529 /* Frameworks */,
-				85571161CCB17FAC5AFB17F2389237DE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6ACCAAD9B44EB1F20EECC045E8267722 /* PBXTargetDependency */,
-			);
-			name = "Pods-LegoExample";
-			productName = "Pods-LegoExample";
-			productReference = 203B6C7F06FC7E22FBEA9639A7EC257F /* Pods_LegoExample.framework */;
+			productReference = 74D54CCD9EBFE0F4042CDF462F257F2D /* XFLegoVIPER.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9D6CE84BA288AE69F714C10A1094155B /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2390A9FCF6CF1404975D6F29FA82E74A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D71245B4B1F26A9DB98EC5FA8BB1D167 /* Pods-LegoExample */,
-				9D7A8C7AADA2FBE5985F699010B7823E /* XFLegoVIPER */,
+				380F45E7462AB3AE15C33A78CA711262 /* Pods-LegoExample */,
+				EC2626344F822E299421946F0AD8DD20 /* XFLegoVIPER */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		55BFF7EB3C34CCD81F7AD75B67D3F85C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		3DFE69B2116CA9B9E28C12C4FE475375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B923C7927D42F7A7E956A6778DCA8AA /* LEMVVMConnector.m in Sources */,
-				575291728EE551FDCFA728A4D9FEEF13 /* LEMVVMModuleFactory.m in Sources */,
-				B77C71D1BA81A662CB5FE7E60A42F19B /* LEMVVMModuleHandler.m in Sources */,
-				E550B0A0779389EE3E916C99CDEB19C2 /* LEMVVMModuleReflect.m in Sources */,
-				E2700184CB31BD625C90F6E82EEE8022 /* LEMVVMNavigationController.m in Sources */,
-				8977C0A0AB9EE4B1B72634A8FF61D8CC /* LEViewController.m in Sources */,
-				FB68DA89CD71DD250073F0913B8A6BB0 /* LEViewModel.m in Sources */,
-				B47F6EFCF9495ADCEA1ED7E83E51724E /* NSObject+XFLegoCopy.m in Sources */,
-				84C12E4C56B2537964C10AF724D67377 /* NSObject+XFLegoInvokeMethod.m in Sources */,
-				D5FF90AB3E416EEDBD154896937765CA /* NSObject+XFLegoSwizzle.m in Sources */,
-				E68EF406E761F13497C89FFD7292FDBD /* UIView+ComponentSubView.m in Sources */,
-				364CB695990EC5AE035DB2ABFA63C5EE /* UIView+XFLego.m in Sources */,
-				3B5A7E3EA3E7722FADC1592F86ACDF82 /* UIViewController+ComponentBridge.m in Sources */,
-				26F97F2F2949C1B3B326ABE1A9E777C7 /* UIViewController+ComponentUI.m in Sources */,
-				3715B253D7DAD8906A6AB2D4F5437AEC /* UIViewController+LEView.m in Sources */,
-				3D9EC6E77B102AF2DC2451D31F85BB5E /* UIViewController+XFLego.m in Sources */,
-				267A392011278D425C1101C87EABB108 /* XFActivity.m in Sources */,
-				9BCE326FD55E22D063D12656795E0902 /* XFComponentHandlerMatcher.m in Sources */,
-				F9B4B9AB1F1438FF2D68AA4EECA63C55 /* XFComponentManager.m in Sources */,
-				E3C72EEB6F6E3E3E8ADB82A62E246699 /* XFComponentReflect.m in Sources */,
-				BF20376844612143A23E4055AB0F7F6B /* XFComponentViewController.m in Sources */,
-				24E3F26DE5E679400F850016DAB063EC /* XFControllerFactory.m in Sources */,
-				626A419776AD7E70D920BACB77C45BD8 /* XFControllerHandler.m in Sources */,
-				D7E55D9F99F9AD541CAD07C2111A8F56 /* XFControllerReflect.m in Sources */,
-				1722E15F553F90CC9D4B1CF3CA75A76A /* XFDataManager.m in Sources */,
-				5C8BD4AA54FC2E76930368FB400DA82F /* XFEventBus.m in Sources */,
-				A522A7BA0487CD3C376DA7E2EDA375D3 /* XFExpressPack.m in Sources */,
-				865238367D000F68290DB25BFFA9B560 /* XFExpressPiece.m in Sources */,
-				CA165C16B785B42064E4DE2D9AE3270A /* XFInteractor.m in Sources */,
-				AE247CBAF3CFA23C2EED6E5D01C3C519 /* XFLegoConfig.m in Sources */,
-				93AD4EDE26FF53FEF24F9D1DB1593685 /* XFLegoVIPER-dummy.m in Sources */,
-				77EE7A033DE9667CCF379DCC8325F35C /* XFModuleReflect.m in Sources */,
-				FA66D1410D07B0B74C7B1931C83B4B3A /* XFPresenter.m in Sources */,
-				162E6C5EF52BACF449190ACB1735B62A /* XFRenderData.m in Sources */,
-				38565B6D8ED663C0FFAFE1487C7E8EC7 /* XFRenderItem.m in Sources */,
-				7FB9DFC54972668689F7666113442790 /* XFRouting.m in Sources */,
-				A205B30F6A00E986CF0176918F644774 /* XFRoutingFactory.m in Sources */,
-				D6F3F2EB81AB5DC6F713A8EE4C0DCC83 /* XFRoutingLinkManager.m in Sources */,
-				1993AA00AB400B55414A818078CF656A /* XFUIBus.m in Sources */,
-				057682A12904645874D8B9C260BBD2F7 /* XFUInterfaceFactory.m in Sources */,
-				92953EFF194C252EB0E1B90B83C06B81 /* XFURLParse.m in Sources */,
-				6FF3B4806BD6255E0A5E1D9E0E1FBE39 /* XFURLRoute.m in Sources */,
-				1EDA72078875E879360E4232A2B932F6 /* XFVIPERModuleAssembly.m in Sources */,
-				CA4DB3617F3B41B880AE49ABE649D5D2 /* XFVIPERModuleHandler.m in Sources */,
-				9EC0DCF437BACDA167C8794B24CEC9C9 /* XFVIPERModuleReflect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C384513AD282DADAF84DAE7990E8D7DC /* Sources */ = {
+		CE25DD0A4DFA6CB1F59E4D79866B0342 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F3F13EF2BC9FCB3D92E81369677ED9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A842C4CAD401AB4BD59EC33C860B849A /* Pods-LegoExample-dummy.m in Sources */,
+				1D20E5FB35FECE48F0A61F106D0A1B01 /* Pods-LegoExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA67AD0865876FC424800F3A8304F856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7516B725EE2B52ADC0FFDC1A7616947D /* LEMVVMConnector.m in Sources */,
+				DFBA5E041F8AE0801B0E68859DCBE999 /* LEMVVMModuleFactory.m in Sources */,
+				54E552FCCBE755CDB4362F94096FEDA0 /* LEMVVMModuleHandler.m in Sources */,
+				F1DB5086F183C09EE3D85350C32C8A44 /* LEMVVMModuleReflect.m in Sources */,
+				B71B6B60EBB96A85E0132DD62B77A6FD /* LEMVVMNavigationController.m in Sources */,
+				3FAB44A333678EC550A1F2F3A54ECCDC /* LEViewController.m in Sources */,
+				2F445479C81C950DE1AD4EF71B93A672 /* LEViewModel.m in Sources */,
+				8BE4A60FE33A2E812C9E58CB05736B73 /* NSObject+XFLegoCopy.m in Sources */,
+				629B24E057F58D920FC8FD23710A843E /* NSObject+XFLegoInvokeMethod.m in Sources */,
+				AB5114B6AE569ABCCC78E9CFEC6B7B1D /* NSObject+XFLegoSwizzle.m in Sources */,
+				0CA1C6DF1111D02F278987C7198B5097 /* NSObject+XFPipe.m in Sources */,
+				8F22894D58A0DFE17D924215A11737AA /* UIView+ComponentSubView.m in Sources */,
+				69730860C7EDD7EEF45EDB9817EAA5A3 /* UIView+XFLego.m in Sources */,
+				8217EBAD8291503AD496429F2F56069F /* UIViewController+ComponentBridge.m in Sources */,
+				C21FFCED7B7A500BC8B3693A72665488 /* UIViewController+ComponentUI.m in Sources */,
+				3B6BAB1ABA338F4191F346B6261A0E65 /* UIViewController+LEView.m in Sources */,
+				0CA53EFD898FEE01565960F5FADF1CB3 /* UIViewController+XFLego.m in Sources */,
+				97DB905D24474CD7E15E4A414B85F4B6 /* XFActivity.m in Sources */,
+				ADD7545882BBD8E88DE2F9D40E80235D /* XFApplicationEmitter.m in Sources */,
+				AE0E3A4D312A610F911AE221B5423E92 /* XFComponentHandlerMatcher.m in Sources */,
+				1CDB772F3AFA9A16BEB60075394DA49D /* XFComponentManager.m in Sources */,
+				C8E99444267364FF148D6B6F12B722A9 /* XFComponentReflect.m in Sources */,
+				B24A363FA39F2833695EB5198ED5D978 /* XFComponentViewController.m in Sources */,
+				7CAB5571B284B16A690565933A1729F0 /* XFControllerFactory.m in Sources */,
+				2ED9470A79707E3805B0E922543718C3 /* XFControllerHandler.m in Sources */,
+				5A1199AC26417D38E72AE1CA14D21349 /* XFControllerReflect.m in Sources */,
+				AAC596B1A7E94F90022967DFAB0808DC /* XFDataManager.m in Sources */,
+				FDBBF877D70496C3097E522703E4DB98 /* XFEventBus.m in Sources */,
+				7736CEDEDDF5C324E2C7AC8EE8BB64DD /* XFExpressDirver.m in Sources */,
+				08B94AD1AE1C503B4B2A07E98D74F256 /* XFExpressPack.m in Sources */,
+				966BC40FE44033283E43843FC66B83B3 /* XFExpressPiece.m in Sources */,
+				C22A9C59EF5BCCD4CB6AB50046B563FF /* XFInteractor.m in Sources */,
+				5C2C6F61913360F0AEAF2E45EAE2966B /* XFLegoConfig.m in Sources */,
+				78DD932C34A11A8605CD1797B6737AF4 /* XFLegoVIPER-dummy.m in Sources */,
+				0525056D1F8C99AFF2C1A86796DBF1E5 /* XFModuleReflect.m in Sources */,
+				83469784C0B0E1EBE532352380CFEBA9 /* XFPipe.m in Sources */,
+				6483D8212F339DEF1448E0A75F558915 /* XFPresenter.m in Sources */,
+				F7CEA604C2A7DB26DC9B0C3AA7DABF2F /* XFRenderData.m in Sources */,
+				0DF125D9E47200115AF91BB8C63DDEB5 /* XFRenderItem.m in Sources */,
+				32046FC983B9BAD6EAFBE74763E357FF /* XFRouting.m in Sources */,
+				33FA6BCA30361FBECD08BA241FCC173A /* XFRoutingFactory.m in Sources */,
+				5623270D5A358913C35ADC325505DBE1 /* XFRoutingLinkManager.m in Sources */,
+				57409D441F4601D6CF53FD376F22647D /* XFUIBus.m in Sources */,
+				6ABA52E454DD24466F06C1FE4DF44EB3 /* XFUInterfaceFactory.m in Sources */,
+				254E7BB85114612D4616BBC22522AF4F /* XFURLInterceptor.m in Sources */,
+				0C29653F5BB2B0F3279802A384E43C5D /* XFURLInterceptorChain.m in Sources */,
+				C8579D43D5F36BBEB070DE62C7FD1976 /* XFURLParse.m in Sources */,
+				4B596731E88FE0C7B23B90D3CCEAE8E5 /* XFURLRoute.m in Sources */,
+				EA3E7AE6DCEFFC6D848D0EE193B2E23D /* XFVIPERModuleAssembly.m in Sources */,
+				B39722FD5E5AD77787C8F7092E9FCF50 /* XFVIPERModuleHandler.m in Sources */,
+				B654B9A58EC9101C0DBDA362F62F83E8 /* XFVIPERModuleReflect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6ACCAAD9B44EB1F20EECC045E8267722 /* PBXTargetDependency */ = {
+		16510F358AB23B349251A794DCE8058A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XFLegoVIPER;
-			target = 9D7A8C7AADA2FBE5985F699010B7823E /* XFLegoVIPER */;
-			targetProxy = 4FF75D8BB15DBD814AF437E64006F73A /* PBXContainerItemProxy */;
+			target = EC2626344F822E299421946F0AD8DD20 /* XFLegoVIPER */;
+			targetProxy = 58864D8431EB7B4989CF03803C2317B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+		122DAD3DEC82AEFBD480C93187CD58A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A56A206A03DD0C987E9EAF497748BE /* XFLegoVIPER.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XFLegoVIPER/XFLegoVIPER-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XFLegoVIPER/XFLegoVIPER-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XFLegoVIPER/XFLegoVIPER.modulemap";
+				PRODUCT_MODULE_NAME = XFLegoVIPER;
+				PRODUCT_NAME = XFLegoVIPER;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6C8DC50FE7A45B6A2A9ECCE1A9F2A0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D1677BE625C611611BA66249C2B282 /* Pods-LegoExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LegoExample/Pods-LegoExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LegoExample/Pods-LegoExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+		DE92FFCA47CFD386F3AB57128C8C288B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33932F0110DFD4E525224EC4919B713 /* XFLegoVIPER.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XFLegoVIPER/XFLegoVIPER-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XFLegoVIPER/XFLegoVIPER-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		82C94EEDFEAAEE8374BA8A77016C087B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7EA5056FA59DAC2F6E4AA2D5F39DDF5 /* XFLegoVIPER.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XFLegoVIPER/XFLegoVIPER-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XFLegoVIPER/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/XFLegoVIPER/XFLegoVIPER.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_MODULE_NAME = XFLegoVIPER;
 				PRODUCT_NAME = XFLegoVIPER;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9207929CF8FF26C8CACE25113042F013 /* Debug */ = {
+		FC9540E4C28FF85DD019C85E0A13950D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 571033B3D2D50D290745B2B18D87FF34 /* Pods-LegoExample.debug.xcconfig */;
+			baseConfigurationReference = 6745FB8120E096BB7CBFAF9F587575C1 /* Pods-LegoExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LegoExample/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LegoExample/Pods-LegoExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LegoExample/Pods-LegoExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LegoExample;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1230,105 +1456,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		98E047E75294A9119F83F1047E93F81F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7EA5056FA59DAC2F6E4AA2D5F39DDF5 /* XFLegoVIPER.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XFLegoVIPER/XFLegoVIPER-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XFLegoVIPER/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XFLegoVIPER/XFLegoVIPER.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = XFLegoVIPER;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F32FCF219E5978EFF9C77AD89FBBAF86 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD2D9C768330EE756D60CC98C38E7027 /* Pods-LegoExample.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LegoExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LegoExample/Pods-LegoExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LegoExample;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0ED41405227F2574F2687B505DCC5F17 /* Build configuration list for PBXNativeTarget "XFLegoVIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
-				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+				DE92FFCA47CFD386F3AB57128C8C288B /* Debug */,
+				122DAD3DEC82AEFBD480C93187CD58A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A95E3F1D36BFC1EDE8851E859BFCEAA3 /* Build configuration list for PBXNativeTarget "Pods-LegoExample" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9207929CF8FF26C8CACE25113042F013 /* Debug */,
-				F32FCF219E5978EFF9C77AD89FBBAF86 /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC446633772E43073215D87ED58A3DC6 /* Build configuration list for PBXNativeTarget "XFLegoVIPER" */ = {
+		E803988788B537B1F25F6653C21F5216 /* Build configuration list for PBXNativeTarget "Pods-LegoExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82C94EEDFEAAEE8374BA8A77016C087B /* Debug */,
-				98E047E75294A9119F83F1047E93F81F /* Release */,
+				FC9540E4C28FF85DD019C85E0A13950D /* Debug */,
+				6C8DC50FE7A45B6A2A9ECCE1A9F2A0B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

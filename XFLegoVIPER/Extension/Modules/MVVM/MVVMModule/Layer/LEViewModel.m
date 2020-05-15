@@ -3,7 +3,7 @@
 //  XFLegoVIPER
 //
 //  Created by Yizzuide on 2017/1/29.
-//  Copyright © 2017年 yizzuide. All rights reserved.
+//  Copyright © 2017年 Yizzuide. All rights reserved.
 //
 
 #import "LEViewModel.h"
@@ -21,6 +21,7 @@ XF_EXPORT_COMPONENT
 - (void)viewDidAppear{}
 - (void)viewWillDisappear{}
 - (void)viewDidDisappear{}
+- (void)viewWillPopOrDismiss{}
 
 - (void)componentWillBecomeFocus{}
 - (void)componentWillResignFocus{}
@@ -34,9 +35,14 @@ XF_EXPORT_COMPONENT
 - (void)onNewIntent:(id)intentData{}
 
 #pragma mark - UI事件
-- (void)dismissKeyboard
+- (void)popViewAction
 {
-    [self.view needDismissKeyboard];
+    [self.uiBus popComponent];
+}
+
+- (void)dismissViewAction
+{
+    [self.uiBus dismissComponent];
 }
 
 #pragma mark - 私有方法
@@ -50,12 +56,14 @@ XF_EXPORT_COMPONENT
     [self initRenderView];
 }
 
-- (void)xfLego_viewWillPopOrDismiss
+- (void)xf_viewWillPopOrDismiss
 {
     // 将组件移除
     [self.uiBus xfLego_implicitRemoveComponentWithTransitionBlock:^(Activity *thisInterface, Activity *nextInterface, TransitionCompletionBlock completionBlock) {
         completionBlock();
     }];
+    // 定时器移除
+    [self.eventBus stopTimer];
 }
 
 @end

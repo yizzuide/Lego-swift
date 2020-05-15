@@ -2,8 +2,8 @@
 //  XFUIBus.h
 //  XFLegoVIPER
 //
-//  Created by 付星 on 2016/11/2.
-//  Copyright © 2016年 yizzuide. All rights reserved.
+//  Created by Yizzuide on 2016/11/2.
+//  Copyright © 2016年 Yizzuide. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -166,6 +166,13 @@ typedef void(^CustomCodeBlock) (Activity *nextInterface);
  *  推出当前视图(注意：返回到上一个界面的意图数据在需要当前模块的Presenter里设置intentData属性）
  */
 - (void)popComponent;
+
+/**
+ * 自定义pop组件到任意上级组件
+ * @param componentName        上级组件名 注：如果只pop到上一级可传nil
+ * @param animated             是否要动画
+ */
+- (void)popComponent:(nullable NSString *)componentName animated:(BOOL)animated;
 
 /**
  *  Modal一个组件

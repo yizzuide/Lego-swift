@@ -9,7 +9,7 @@
 import UIKit
 
 public extension NSObject {
-    public func createVCObjectFromString(className : String) -> UIViewController! {
+    func createVCObjectFromString(className : String) -> UIViewController! {
         // get the project name
         if  let appName = Bundle.main.infoDictionary!["CFBundleName"] as? NSString {
             //拼接控制器名
@@ -24,7 +24,7 @@ public extension NSObject {
         return nil;
     }
     
-    public func createObjectFromString(className : String) -> NSObject? {
+    func createObjectFromString(className : String) -> NSObject? {
         // 1.获取命名空间
         guard let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? NSString else {
             print("命名空间不存在")

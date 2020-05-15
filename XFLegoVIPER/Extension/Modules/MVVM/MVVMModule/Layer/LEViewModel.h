@@ -3,7 +3,7 @@
 //  XFLegoVIPER
 //
 //  Created by Yizzuide on 2017/1/29.
-//  Copyright © 2017年 yizzuide. All rights reserved.
+//  Copyright © 2017年 Yizzuide. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,20 +12,16 @@
 #import "LEDataDriverProtocol.h"
 #import "XFLegoMarco.h"
 #import "XFComponentBindEvent.h"
-#import "XFComponentUIEvent.h"
+#import "XFComponentEventResponder.h"
 #import "LEMVVMModuleReflect.h"
+#import "XFExpressDirver.h"
 
-@interface LEViewModel : NSObject <XFComponentBindEvent,XFComponentUIEvent, LEDataDriverProtocol,XFControllerRunnable>
+@interface LEViewModel : XFExpressDirver <XFComponentBindEvent, LEDataDriverProtocol, XFControllerRunnable>
 
 /**
  *  视图层
  */
 @property (nonatomic, weak, readonly) id<LEViewProtocol> view;
-
-/**
- *  快递数据
- */
-@property (nonatomic, strong) id expressData;
 
 /**
  *  UI总线

@@ -3,11 +3,12 @@
 //  TZEducation
 //
 //  Created by Yizzuide on 2017/9/26.
-//  Copyright © 2017年 CBY. All rights reserved.
+//  Copyright © 2017年 Yizzuide. All rights reserved.
 //
 
 #import "LEMVVMNavigationController.h"
 #import "LEMVVMConnector.h"
+#import "LEMVVMIntent.h"
 
 @interface LEMVVMNavigationController ()
 
@@ -20,7 +21,7 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+- (void)pushViewController:(UIViewController<LEMVVMIntent> *)viewController animated:(BOOL)animated
 {
     NSString *className = NSStringFromClass([viewController class]);
     if ([className containsString:@"ViewController"]) {

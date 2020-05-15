@@ -2,8 +2,8 @@
 //  XFVIPERModuleReflect.h
 //  XFLegoVIPER
 //
-//  Created by 付星 on 2016/11/3.
-//  Copyright © 2016年 yizzuide. All rights reserved.
+//  Created by Yizzuide on 2016/11/3.
+//  Copyright © 2016年 Yizzuide. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return XFVIPERModuleReflect
  */
-- (instancetype)initWithFromRouting:(XFRouting *)fromRouting NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithFromRouting:(XFRouting *)fromRouting;
 
 /**
  *  通过Nav或Nib快速组建一个模块

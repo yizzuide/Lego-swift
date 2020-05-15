@@ -2,8 +2,8 @@
 //  XFEventBus.h
 //  XFLegoVIPER
 //
-//  Created by 付星 on 2016/11/3.
-//  Copyright © 2016年 yizzuide. All rights reserved.
+//  Created by Yizzuide on 2016/11/3.
+//  Copyright © 2016年 Yizzuide. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -80,6 +80,29 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param notiNames 通知名数组
  */
 - (void)registerMVxNotifications:(NSArray<NSString *> *)notiNames;
+
+/**
+ *  初始化定时器
+ *
+ *  @param interval 重复时间s
+ */
+- (void)setupTimerWithTimeInterval:(NSTimeInterval)interval;
+/**
+ *  启动定时器
+ */
+- (void)startTimer;
+/**
+ *  暂停定时器
+ */
+- (void)pauseTimer;
+/**
+ *  重启定时器
+ */
+- (void)resumeTimer;
+/**
+ *  停止/销毁定时器
+ */
+- (void)stopTimer;
 
 @end
 NS_ASSUME_NONNULL_END

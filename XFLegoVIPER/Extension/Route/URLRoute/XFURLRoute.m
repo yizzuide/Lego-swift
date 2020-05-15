@@ -2,8 +2,8 @@
 //  XFURLRoute.m
 //  XFLegoVIPER
 //
-//  Created by 付星 on 2016/11/7.
-//  Copyright © 2016年 yizzuide. All rights reserved.
+//  Created by Yizzuide on 2016/11/7.
+//  Copyright © 2016年 Yizzuide. All rights reserved.
 //
 
 #import "XFURLRoute.h"
@@ -11,6 +11,7 @@
 #import "XFLegoMarco.h"
 #import "XFRoutingLinkManager.h"
 #import "XFComponentReflect.h"
+#import "XFURLInterceptorChain.h"
 
 @implementation XFURLRoute
 
@@ -100,7 +101,12 @@ static NSMutableDictionary<NSString *,NSString *> *URLHandler_;
         return NO;
     }
     
-    // 开始切换组件
+    // 插件需要调用拦截处理器过滤链
+    if ([XFURLInterceptorChain executeChainWithURL:url componentName:componentName]) {
+        return NO;
+    }
+    
+    // 一切正常，可以开始切换组件
     if (transitionBlock)
         transitionBlock(componentName,params);
 

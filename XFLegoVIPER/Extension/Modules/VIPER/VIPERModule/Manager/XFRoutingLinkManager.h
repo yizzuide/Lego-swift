@@ -2,8 +2,8 @@
 //  XFRoutingLinkManager.h
 //  XFLegoVIPER
 //
-//  Created by 付星 on 16/9/2.
-//  Copyright © 2016年 yizzuide. All rights reserved.
+//  Created by Yizzuide on 16/9/2.
+//  Copyright © 2016年 Yizzuide. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

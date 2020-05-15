@@ -3,7 +3,7 @@
 //  XFLegoVIPER
 //
 //  Created by Yizzuide on 2017/2/10.
-//  Copyright © 2017年 yizzuide. All rights reserved.
+//  Copyright © 2017年 Yizzuide. All rights reserved.
 //
 
 #import "UIViewController+ComponentUI.h"
@@ -14,8 +14,7 @@
 #import "XFComponentBindEvent.h"
 
 #define MatchComponent \
-id<XFComponentBindEvent> component = (id)[XFComponentReflect componentForUInterface:self]; \
-if (!component || [component isKindOfClass:[UIViewController class]]) return;
+id<XFComponentBindEvent> component = (id)[XFComponentReflect componentForUInterface:self];
 
 @implementation UIViewController (ComponentUI)
 
@@ -97,6 +96,20 @@ if (!component || [component isKindOfClass:[UIViewController class]]) return;
     MatchComponent
     if ([component respondsToSelector:@selector(viewDidDisappear)])
         [component viewDidDisappear];
+    
+    // 如果当前控制器属于TabBar直接子控制器，直接返回 (因为该组件不需要移除)
+    if ([self.parentViewController isKindOfClass:[UITabBarController class]]) {
+        return;
+    }
+    if ([self.parentViewController isKindOfClass:[UINavigationController class]] &&
+        [self.parentViewController.parentViewController isKindOfClass:[UITabBarController class]]) {
+        return;
+    }
+    // 如果当前控制器出于某种原因拒绝被移除，直接返回
+    if (![self xfLego_enableAutoRemoveSelfComp]) {
+        return;
+    }
+    
     // 如果当前视图被pop或dismiss
     if (self.isMovingFromParentViewController ||
         self.isBeingDismissed ||
@@ -106,8 +119,12 @@ if (!component || [component isKindOfClass:[UIViewController class]]) return;
         [self _xfLego_viewWillPopOrDismiss];
         // 如果是通过框架方式，直接返回
         if (self.poppingProgrammatically) return;
-        // 通知事件层当前视图将移除
-        [component xfLego_viewWillPopOrDismiss];
+        // 事件层响应移除操作，如：内存释放、断开组件关系链等
+        [component xf_viewWillPopOrDismiss];
+        // 事件层同步当前视图生命周期
+        if ([component respondsToSelector:@selector(viewWillPopOrDismiss)]) {
+            [component viewWillPopOrDismiss];
+        }
     }
 }
 
@@ -124,6 +141,10 @@ if (!component || [component isKindOfClass:[UIViewController class]]) return;
 #pragma mark - 子类可覆盖方法
 - (void)xfLego_viewDidLoadForTabBarViewController {}
 - (void)xfLego_viewWillPopOrDismiss {}
+- (BOOL)xfLego_enableAutoRemoveSelfComp
+{
+    return YES;
+}
 // 实现退出键盘
 - (void)needDismissKeyboard
 {
@@ -144,7 +165,9 @@ if (!component || [component isKindOfClass:[UIViewController class]]) return;
 {
     MatchComponent
     [self setPoppingProgrammatically:@NO];
-    [component xfLego_bindView:self];
+    if ([component respondsToSelector:@selector(xfLego_bindView:)]) {
+        [component xfLego_bindView:self];
+    }
     if (additionWorkBlock) {
         additionWorkBlock();
     }

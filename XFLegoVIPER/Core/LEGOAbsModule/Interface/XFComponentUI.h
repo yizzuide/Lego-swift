@@ -3,7 +3,7 @@
 //  XFLegoVIPER
 //
 //  Created by Yizzuide on 2017/2/10.
-//  Copyright © 2017年 yizzuide. All rights reserved.
+//  Copyright © 2017年 Yizzuide. All rights reserved.
 //
 
 #ifndef XFComponentUI_h
@@ -38,17 +38,24 @@ view.frame = frame;
 @optional
 
 /**
- *  发起请求显示的消息
+ *  显示消息
  *
  *  @param msg 消息
  */
 - (void)needSendRequestWithMsg:(NSString *)msg;
 /**
- *  结束请求显示的消息
+ *  隐藏消息
  *
  *  @param msg 消息
  */
 - (void)needEndRequestWithMsg:(NSString *)msg;
+/**
+ *  隐藏消息
+ *
+ *  @param msg 消息
+ *  @param success 是否成功
+ */
+- (void)needEndRequestWithMsg:(NSString *)msg success:(BOOL)success;
 
 /**
  *  键盘弹起，需要更新输入界面的的Y值
@@ -61,6 +68,10 @@ view.frame = frame;
  *  需要退出键盘
  */
 - (void)needDismissKeyboard;
+/**
+ * 填充数据
+ */
+- (void)needFillRenderData;
 
 @end
 
